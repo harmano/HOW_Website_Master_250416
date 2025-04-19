@@ -5754,46 +5754,31 @@ html, body {
 @media screen and (max-width: 768px) {
   .custom-modal-content {
     width: 90%;
-    height: 50vh; /* ✅ half the screen */
-    max-height: 50vh;
+    max-width: 90vw;
+    max-height: 90vh;
     padding: 0;
-    border-radius: 5px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .custom-modal-content img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* ✅ make it fill the modal */
+    background: transparent;
     border-radius: 0;
+    overflow: visible;
+    position: relative;
   }
 
-  .custom-close {
-    top: 8px;
-    right: 8px;
-    font-size: 24px;
-    width: 36px;
-    height: 36px;
-    line-height: 32px;
-  }
+  /* Square image wrapper */
   .slide-image-wrapper {
     position: relative;
     width: 100%;
-    height: 100%;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
   }
-  
+
   .slide-image-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
   }
-  
-  /* Top Label */
+
+  /* Top label inside the image square */
   .slide-label-top {
     position: absolute;
     top: 12px;
@@ -5806,8 +5791,8 @@ html, body {
     z-index: 2;
     font-weight: bold;
   }
-  
-  /* Bottom Caption */
+
+  /* Bottom label inside the image square */
   .slide-label-bottom {
     position: absolute;
     bottom: 12px;
@@ -5821,12 +5806,43 @@ html, body {
     text-align: center;
     box-sizing: border-box;
   }
-  .contact-phone-p-2 {
-    word-break: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.4;
+
+  /* Buttons are positioned outside the image wrapper */
+  .custom-prev,
+  .custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.7);
+    color: #000;
+    font-size: 28px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
   }
-  .contact-phone-p-2 {
-    margin-bottom: 10px;
+
+  .custom-prev {
+    left: -20px;
+  }
+
+  .custom-next {
+    right: -20px;
+  }
+
+  .custom-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    width: 36px;
+    height: 36px;
+    line-height: 32px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 50%;
+    z-index: 15;
+    cursor: pointer;
   }
 }
