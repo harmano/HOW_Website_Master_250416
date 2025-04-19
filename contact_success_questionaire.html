@@ -185,69 +185,28 @@ body::before {
       <a href="index.html"><img class="brand-logo-thankyou" src="static/H-Logo-Final.png" alt="Logo"></a>
     </div>
 
-    <div class="thank-you-title">Thank you! </div>
-    <div class="thank-you-subtext">
-      <p>Thanks for reaching out to <strong>House of Wrap</strong>!</p>
-      <p>We’ve sent your request to our team. In the meantime, feel free to explore more about what we do on our website and social media pages:</p>
-          </div>
-
-    <div class="link-box">
-      <!-- Social Media Links -->
-
-
-    <!-- Website Link -->
-  <div class="link-card">
-    <h6>Visit Our Portfolio</h6>
-    <div class="row">
-      <br>
-      <a target="_blank" href="portfolio.html" class="newbtn buttons-main">View Projects</a> 
-    </div>
-    <div class="link-card">
-
-      <div class="social-icons">
-        <a target="_blank" href="https://www.facebook.com/houseofwrapcanada/"><i class="fab fa-facebook"></i></a>
-        <a target="_blank" href="https://www.instagram.com/houseofwrapcanada/"><i class="fab fa-instagram"></i></a>
-        <a target="_blank" href="https://g.co/kgs/GaaaiHe"><i class="fab fa-google"></i></a>
-      </div>
-    </div>
+ <!-- Questionnaire Modal -->
+<div id="survey-modal" class="modal">
+  <div class="modal-content purple lighten-2 white-text">
+    <h6 class="center-align">Hi there! Could you please tell us:</h6>
+    <h5 class="center-align">How did you discover our company?</h5>
+    <form id="survey-form" class="center-align">
+      <p><label><input name="source" type="radio" value="Referral" /><span>Referral</span></label></p>
+      <p><label><input name="source" type="radio" value="Social media" /><span>Social media</span></label></p>
+      <p><label><input name="source" type="radio" value="Another website" /><span>Another website</span></label></p>
+      <p><label><input name="source" type="radio" value="Ad" /><span>Ad</span></label></p>
+      <p><label><input name="source" type="radio" value="Search engine" /><span>Search engine</span></label></p>
+      <p><label><input name="source" type="radio" value="Other" /><span>Other</span></label></p>
+    </form>
   </div>
-
-  <!-- Contact Info -->
-  <div class="link-card">
-    <p><i class="fas fa-envelope"></i></p>
-    <p style="color: inherit; text-decoration: none;">
-      <a href="mailto:contact@houseofwrap.com" style="color: inherit; text-decoration: none;">contact@houseofwrap.com</a> 
-      <a href="mailto:projects@houseofwrap.com" style="color: inherit; text-decoration: none;">projects@houseofwrap.com</a>
-    </p>
-    
-    <p><i class="fas fa-phone"></i></p>
-    <p>
-      <a href="tel:+9054079484" style="color: inherit; text-decoration: none;">(905) 407-9484</a>
-    </p>
+  <div class="modal-footer purple lighten-1">
+    <a href="#!" class="modal-close waves-effect waves-light btn white purple-text text-darken-4">Submit</a>
+  </div>
+</div>
   
-    </div>
 
-  </div>
+  
 
-    <!-- 
-  <div class="how-wrap-overlay" id="how-wrap-overlay">
-    <div class="how-wrap-modal">
-      <p class="how-wrap-intro">Hi there! Could you please tell us:</p>
-      <h2 class="how-wrap-question">How did you discover our company?</h2>
-      <form class="how-wrap-form">
-        <label class="how-wrap-option"><input type="radio" name="source" value="Facebook"><span>Facebook</span></label>
-        <label class="how-wrap-option"><input type="radio" name="source" value="Instagram"><span>Instagram</span></label>
-        <label class="how-wrap-option"><input type="radio" name="source" value="Google"><span>Google</span></label>
-        <label class="how-wrap-option"><input type="radio" name="source" value="Other Search Engine"><span>Other Search Engine</span></label>
-        <label class="how-wrap-option"><input type="radio" name="source" value="3M"><span>3M</span></label>
-        <label class="how-wrap-option"><input type="radio" name="source" value="Referral"><span>Referral</span></label>
-        <label class="how-wrap-option"><input type="radio" name="source" value="Other"><span>Other</span></label>
-        <label class="how-wrap-option"><input type="radio" name="source" value="Ad"><span>Ad</span></label>
-        
-        <button type="button" class="how-wrap-submit" onclick="closeHowWrapModal()">Submit</button>
-      </form>
-    </div>
-  </div> -->
 
 
 </body>
@@ -271,42 +230,14 @@ body::before {
         src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
 </script>
 <script>
-  function closeHowWrapModal() {
-    const modal = document.getElementById("how-wrap-overlay");
-    modal.classList.remove("show");
-  }
-
-  window.addEventListener("DOMContentLoaded", () => {
-    const modal = document.getElementById("how-wrap-overlay");
-    
-    // Start hidden (opacity 0), wait 3 seconds, then fade in
+  document.addEventListener('DOMContentLoaded', function () {
+    const modalEl = document.querySelector('#survey-modal');
+    const instance = M.Modal.init(modalEl, {
+      dismissible: true
+    });
     setTimeout(() => {
-      modal.classList.add("show");
-    }, 3000);
-  });
-
-  // Highlight selected radio label
-  document.querySelectorAll('.how-wrap-option input[type="radio"]').forEach((radio) => {
-    radio.addEventListener('change', () => {
-      document.querySelectorAll('.how-wrap-option').forEach((label) => {
-        label.classList.remove('selected');
-      });
-      if (radio.checked) {
-        radio.closest('.how-wrap-option').classList.add('selected');
-      }
-    });
-  });
-</script>
-<script>
-  document.querySelectorAll('.how-wrap-option input[type="radio"]').forEach((radio) => {
-    radio.addEventListener('change', () => {
-      document.querySelectorAll('.how-wrap-option').forEach((label) => {
-        label.classList.remove('selected');
-      });
-      if (radio.checked) {
-        radio.closest('.how-wrap-option').classList.add('selected');
-      }
-    });
+      instance.open();
+    }, 3000); // Show modal after 3 seconds
   });
 </script>
 </html>

@@ -2373,6 +2373,30 @@
                         
                       </div>
                      </div>
+                     <div class="row">
+                      <div class="input-field2 col s11">
+                        <input 
+                          placeholder="How did you hear about us " 
+                          type="text" 
+                          name="how_heard" 
+                          id="dropdownInput2" 
+                          readonly 
+                           
+                          onclick="toggleDropdown('dropdownOptions2')"
+                        >
+                        <div id="dropdownOptions2" class="dropdown-options">
+                          <div onclick="selectOption2('Facebook')">Facebook</div>
+                          <div onclick="selectOption2('Instagram')">Instagram</div>
+                          <div onclick="selectOption2('Google')">Google</div>
+                          <div onclick="selectOption2('Other Search Engine')">Other Search Engine</div>
+                          <div onclick="selectOption2('3M')">3M</div>
+                          <div onclick="selectOption2('Referral')">Referral</div>
+                          <div onclick="selectOption2('Ad')">Ad</div>
+                          <div onclick="selectOption2('Other')">Other</div>
+                        </div>
+                      </div>
+                    </div>
+                  
                      <input type="hidden" name="form-source" id="formSource">
                      <input type="hidden" name="Date Last Contacted">
                      <input type="hidden" name="Status">
@@ -2750,7 +2774,39 @@
       
       });
    </script>
+ <script>
+  // Property Type Dropdown
+  function selectOption(value) {
+    document.getElementById("dropdownInput").value = value;
+    document.getElementById("dropdownOptions").style.display = "none";
+  }
 
+  document.getElementById("dropdownInput").addEventListener("click", function () {
+    const options = document.getElementById("dropdownOptions");
+    options.style.display = options.style.display === "block" ? "none" : "block";
+  });
+
+  // How Did You Hear Dropdown
+  function selectOption2(value) {
+    document.getElementById("dropdownInput2").value = value;
+    document.getElementById("dropdownOptions2").style.display = "none";
+  }
+
+  document.getElementById("dropdownInput2").addEventListener("click", function () {
+    const options = document.getElementById("dropdownOptions2");
+    options.style.display = options.style.display === "block" ? "none" : "block";
+  });
+
+  // Close any dropdowns when clicking outside
+  document.addEventListener("click", function (event) {
+    if (!event.target.closest(".input-field2")) {
+      const dropdown1 = document.getElementById("dropdownOptions");
+      const dropdown2 = document.getElementById("dropdownOptions2");
+      if (dropdown1) dropdown1.style.display = "none";
+      if (dropdown2) dropdown2.style.display = "none";
+    }
+  });
+</script>
         <!-- Carosuel-->
    <script>
       document.addEventListener("DOMContentLoaded", function () {

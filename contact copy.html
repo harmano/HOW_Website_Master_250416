@@ -146,11 +146,8 @@
       <input placeholder="Location" type="text" name="Location" required>
     </div>
   </div>
-  
-  <input type="hidden" name="how_heard" id="howHeardInput">
   <input type="hidden" name="form-source" id="formSource">
   <div class="row">
-    <!-- Property Type -->
     <div class="input-field2 col s5">
       <input placeholder="Property Type" type="text" name="property_type" id="dropdownInput" readonly required>
       <div id="dropdownOptions" class="dropdown-options">
@@ -165,7 +162,6 @@
       </div>
     </div>
     <div class="col s1"></div>
-    <!-- Budget -->
     <div class="input-field2 col s5" style="position: relative;">
       <input 
         type="text" 
@@ -173,7 +169,7 @@
         name="Budget" 
         id="budgetInput" 
         required 
-        style="padding-left: 40px;">
+        style="padding-left: 40px;"> <!-- make space for $ -->
       <span 
         id="dollarSign" 
         style="
@@ -185,31 +181,6 @@
           font-size: 1rem;">
         $
       </span>
-    </div>
-  
-
-  </div>
-  <div class="row">
-    <div class="input-field2 col s11">
-      <input 
-        placeholder="How did you hear about us " 
-        type="text" 
-        name="how_heard" 
-        id="dropdownInput2" 
-        readonly 
-         
-        onclick="toggleDropdown('dropdownOptions2')"
-      >
-      <div id="dropdownOptions2" class="dropdown-options">
-        <div onclick="selectOption2('Facebook')">Facebook</div>
-        <div onclick="selectOption2('Instagram')">Instagram</div>
-        <div onclick="selectOption2('Google')">Google</div>
-        <div onclick="selectOption2('Other Search Engine')">Other Search Engine</div>
-        <div onclick="selectOption2('3M')">3M</div>
-        <div onclick="selectOption2('Referral')">Referral</div>
-        <div onclick="selectOption2('Ad')">Ad</div>
-        <div onclick="selectOption2('Other')">Other</div>
-      </div>
     </div>
   </div>
 
@@ -360,7 +331,6 @@
   </footer>
 
   <script>
-    // Property Type Dropdown
     function selectOption(value) {
       document.getElementById("dropdownInput").value = value;
       document.getElementById("dropdownOptions").style.display = "none";
@@ -371,26 +341,13 @@
       options.style.display = options.style.display === "block" ? "none" : "block";
     });
   
-    // How Did You Hear Dropdown
-    function selectOption2(value) {
-      document.getElementById("dropdownInput2").value = value;
-      document.getElementById("dropdownOptions2").style.display = "none";
-    }
-  
-    document.getElementById("dropdownInput2").addEventListener("click", function () {
-      const options = document.getElementById("dropdownOptions2");
-      options.style.display = options.style.display === "block" ? "none" : "block";
-    });
-  
-    // Close any dropdowns when clicking outside
     document.addEventListener("click", function (event) {
       if (!event.target.closest(".input-field2")) {
-        const dropdown1 = document.getElementById("dropdownOptions");
-        const dropdown2 = document.getElementById("dropdownOptions2");
-        if (dropdown1) dropdown1.style.display = "none";
-        if (dropdown2) dropdown2.style.display = "none";
+        document.getElementById("dropdownOptions").style.display = "none";
       }
     });
+  
+
   </script>
    <!-- Contact form-->
    <script>
