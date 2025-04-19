@@ -5847,4 +5847,7 @@ html, body {
     z-index: 15;
     cursor: pointer;
   }
+  .contact-phone-p-2{
+    font-size: 12px;
+  }
 }
