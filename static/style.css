@@ -5749,3 +5749,44 @@ html, body {
   overflow-x: hidden !important;
   max-width: 100vw !important;
 }
+
+@media screen and (max-width: 768px) {
+  .custom-modal-content {
+    height: auto;
+    max-height: 100vh;
+    width: 100%;
+    max-width: 90vw;
+    background: transparent;
+    overflow: visible;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    position: relative;
+  }
+
+  .slide-image-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* ✅ Force square */
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slide-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ✅ Fill square with image */
+  }
+
+  .custom-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 50%;
+    font-size: 26px;
+    padding: 4px 10px;
+    cursor: pointer;
+  }
+}
