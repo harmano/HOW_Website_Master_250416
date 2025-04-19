@@ -44,60 +44,10 @@
         }
      </style>
   </head>
-
- <!--Nav-->
-<nav  class="">
-  <div class="container-2 nav-wrapper">
-    <a href="index.html"><img class="brand-logo hide-on-med-and-down" src="static/H-Logo-Final.png" alt="Logo"></a>
-
-    <a href="index.html"><img class="brand-logo-mobile hide-on-large-only" src="static/H-Logo-Final.png" alt="Logo"></a>
-
-    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down ">
-      <li><a class="nav-text  " href="index.html">Home</a></li>     
-      <li>
-        <div class="dropdown1 ">
-          <span class="nav-text-services" >Services
-          </span>
-          <div class="dropdown-content1">
-            <a class="dropdown-content-text" href="commercial-services.html">Commercial</a>
-            <a class="dropdown-content-text" href="residential-services.html">Residential</a>      
-          </div>
-        </div>
-      </li>
-      <li><a class="nav-text " href="portfolio.html">Portfolio</a></li>   
-      <li>
-        <div class="dropdown1 ">
-          <span class="nav-text-services " >About
-          </span>
-          <div class="dropdown-content1">
-            <a class="dropdown-content-text" href="about.html">About Us</a>
-            <a class="dropdown-content-text"  href="vinylexplained.html">About Vinyl</a>
-          </div>      
-        </div>
-      </li>
-      <li><a class="nav-text active-nav" href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-
-</nav>
-
-<!--Mobile Nav-->
-<ul class="sidenav" id="mobile-demo">
-      <li><a class="nav-text2 " href="index.html">Home</a></li>
-      <li><a class="nav-text2" href="portfolio.html">Portfolio</a></li>
-     <li><a class="nav-text2 non-hover" >Services</a></li>
-        <li><a class="nav-text2 indent" href="residential-services.html">Residential</a></li>
-        <li><a class="nav-text2 indent" href="commercial-services.html">Commercial</a></li>
-     <li><a class="nav-text2 non-hover" >About</a></li>
-        <li><a class="nav-text2 indent" href="vinylexplained.html">Vinyl</a></li>
-        <li><a class="nav-text2 indent" href="about.html">Us</a></li>
-      <li><a class="nav-text2" href="contact.html">Contact</a></li>
-  </ul>
-<!--Mobile Nav-->
+  <div id="nav-placeholder"></div>
 
   <body >
-
+    <div id="nav-placeholder"></div>
 
 
 
@@ -146,8 +96,11 @@
       <input placeholder="Location" type="text" name="Location" required>
     </div>
   </div>
+  
+  <input type="hidden" name="how_heard" id="howHeardInput">
   <input type="hidden" name="form-source" id="formSource">
   <div class="row">
+    <!-- Property Type -->
     <div class="input-field2 col s5">
       <input placeholder="Property Type" type="text" name="property_type" id="dropdownInput" readonly required>
       <div id="dropdownOptions" class="dropdown-options">
@@ -162,6 +115,7 @@
       </div>
     </div>
     <div class="col s1"></div>
+    <!-- Budget -->
     <div class="input-field2 col s5" style="position: relative;">
       <input 
         type="text" 
@@ -169,7 +123,7 @@
         name="Budget" 
         id="budgetInput" 
         required 
-        style="padding-left: 40px;"> <!-- make space for $ -->
+        style="padding-left: 40px;">
       <span 
         id="dollarSign" 
         style="
@@ -181,6 +135,31 @@
           font-size: 1rem;">
         $
       </span>
+    </div>
+  
+
+  </div>
+  <div class="row">
+    <div class="input-field2 col s11">
+      <input 
+        placeholder="How did you hear about us " 
+        type="text" 
+        name="how_heard" 
+        id="dropdownInput2" 
+        readonly 
+         
+        onclick="toggleDropdown('dropdownOptions2')"
+      >
+      <div id="dropdownOptions2" class="dropdown-options">
+        <div onclick="selectOption2('Facebook')">Facebook</div>
+        <div onclick="selectOption2('Instagram')">Instagram</div>
+        <div onclick="selectOption2('Google')">Google</div>
+        <div onclick="selectOption2('Other Search Engine')">Other Search Engine</div>
+        <div onclick="selectOption2('3M')">3M</div>
+        <div onclick="selectOption2('Referral')">Referral</div>
+        <div onclick="selectOption2('Ad')">Ad</div>
+        <div onclick="selectOption2('Other')">Other</div>
+      </div>
     </div>
   </div>
 
@@ -284,6 +263,7 @@
               </div> -->
         </section>
      </div>
+     <script src="includes.js"></script>
   </body>
   <footer  class="footer-container ">
     <section class="footer-container-2">
@@ -331,6 +311,7 @@
   </footer>
 
   <script>
+    // Property Type Dropdown
     function selectOption(value) {
       document.getElementById("dropdownInput").value = value;
       document.getElementById("dropdownOptions").style.display = "none";
@@ -341,13 +322,26 @@
       options.style.display = options.style.display === "block" ? "none" : "block";
     });
   
-    document.addEventListener("click", function (event) {
-      if (!event.target.closest(".input-field2")) {
-        document.getElementById("dropdownOptions").style.display = "none";
-      }
+    // How Did You Hear Dropdown
+    function selectOption2(value) {
+      document.getElementById("dropdownInput2").value = value;
+      document.getElementById("dropdownOptions2").style.display = "none";
+    }
+  
+    document.getElementById("dropdownInput2").addEventListener("click", function () {
+      const options = document.getElementById("dropdownOptions2");
+      options.style.display = options.style.display === "block" ? "none" : "block";
     });
   
-
+    // Close any dropdowns when clicking outside
+    document.addEventListener("click", function (event) {
+      if (!event.target.closest(".input-field2")) {
+        const dropdown1 = document.getElementById("dropdownOptions");
+        const dropdown2 = document.getElementById("dropdownOptions2");
+        if (dropdown1) dropdown1.style.display = "none";
+        if (dropdown2) dropdown2.style.display = "none";
+      }
+    });
   </script>
    <!-- Contact form-->
    <script>
