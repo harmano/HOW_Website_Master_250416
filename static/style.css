@@ -5821,4 +5821,12 @@ html, body {
     text-align: center;
     box-sizing: border-box;
   }
+  .contact-phone-p-2 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.4;
+  }
+  .contact-phone-p-2 {
+    margin-bottom: 10px;
+  }
 }
