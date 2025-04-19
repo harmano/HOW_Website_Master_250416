@@ -3590,7 +3590,21 @@ ul.custom-tabs li.custom-tab-active::before {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin: 0;
 }
-
+.custom-gradient-container-green {
+  background: linear-gradient(
+      to bottom right,
+      #a7b787, /* muted olive */
+      #cdd8b3, /* lighter olive */
+      #e8f0d4, /* pale olive tint */
+      #f5f9ef  /* soft off-white olive tone */
+    ),
+    url('https://www.transparenttextures.com/patterns/brushed-alum.png'); /* Brushed metal texture */
+  background-blend-mode: multiply;
+  width: 100%;
+  padding: 8vw 0px 13vw 0px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
 .custom-gradient-container-2 {
   background: linear-gradient(
     to bottom right,
@@ -5853,4 +5867,116 @@ html, body {
   .contact-phone-p-2{
     font-size: 12px;
   }
+  .h1-text-center1-case2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin-top: 40px;
+    text-align: center !important;
+    font-size: 40px !important;
+  }
+}
+
+
+.blog-container-custom {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.blog-navlinks-custom {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 25px;
+}
+.blog-navlink-p-custom a {
+  color: #007aff;
+  text-decoration: none;
+}
+
+.blog-h1-custom {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.blog-subtitle-custom {
+  font-size: 1.25rem;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 50px;
+  color: #444;
+}
+
+.blog-section-title-custom {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #222;
+  margin-top: 50px;
+  margin-bottom: 16px;
+}
+
+.blog-paragraph-custom {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin-bottom: 30px;
+  color: #444;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: black;
+}
+
+.blog-image-full, .blog-image-half {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin-bottom: 32px;
+}
+
+.blog-backtotop-custom {
+  display: inline-block;
+  font-weight: bold;
+  color: #007aff;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.blog-divider {
+  border-top: 1px solid #ddd;
+  margin: 60px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .blog-h1-custom {
+    font-size: 2.2rem;
+  }
+  .blog-subtitle-custom {
+    font-size: 1rem;
+  }
+  .blog-section-title-custom {
+    font-size: 1.4rem;
+  }
+
+}
+
+
+.h1-text-center1-case1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-top: 10px;
+  text-align: center !important;
+  font-size: 2vw;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.h1-text-center1-case2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+  text-align: center !important;
+  font-size: 6vw;
 }

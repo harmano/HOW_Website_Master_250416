@@ -2160,8 +2160,7 @@
              allowfullscreen
              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
            </iframe>
-           <div class="slide-label-top">VIDEO</div>
-           <div class="slide-label-bottom">X</div>
+    
          </div>
        </div>
        <button class="custom-prev">&#10094;</button>
@@ -2335,7 +2334,7 @@
                         <input
   placeholder="Phone"
   type="tel"
-  name="contact_number"
+  name="Contact Number"
   inputmode="numeric"
   pattern="[0-9]*"
   required
@@ -2391,7 +2390,7 @@
                         <input 
                           placeholder="How did you hear about us " 
                           type="text" 
-                          name="how_heard" 
+                          name="How They Heard About Us?" 
                           id="dropdownInput2" 
                           readonly 
                            
@@ -3009,25 +3008,36 @@
       });
    </script>
         <!-- Dropdown-->
-   <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const dropdownTriggers = document.querySelectorAll(".dropdown-toggle");
-       
-        dropdownTriggers.forEach(trigger => {
-      	trigger.addEventListener("click", function (e) {
-      	  e.preventDefault();
-      	  const group = this.getAttribute("data-group");
-      	  const items = document.querySelectorAll(`.${group}`);
-      	  items.forEach(item => item.classList.toggle("hidden"));
-      	});
-        });
-       
-        // Initialize sidenav
-        const elems = document.querySelectorAll(".sidenav");
-        M.Sidenav.init(elems);
-      });
-       
-   </script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const dropdownTriggers = document.querySelectorAll(".dropdown-toggle");
+        
+            dropdownTriggers.forEach(trigger => {
+              trigger.addEventListener("click", function (e) {
+                e.preventDefault();
+                const group = this.getAttribute("data-group");
+        
+                // Close all dropdown groups first
+                const allGroups = new Set(
+                  Array.from(dropdownTriggers).map(t => t.getAttribute("data-group"))
+                );
+        
+                allGroups.forEach(g => {
+                  if (g !== group) {
+                    document.querySelectorAll(`.${g}`).forEach(item => item.classList.add("hidden"));
+                  }
+                });
+        
+                // Toggle current dropdown group
+                document.querySelectorAll(`.${group}`).forEach(item => item.classList.toggle("hidden"));
+              });
+            });
+        
+            // Initialize sidenav (Materialize)
+            const elems = document.querySelectorAll(".sidenav");
+            M.Sidenav.init(elems);
+          });
+        </script>
 
    <script>
       document.querySelectorAll('.tab-item-unique').forEach(tab => {

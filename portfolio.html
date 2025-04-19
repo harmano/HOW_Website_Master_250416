@@ -21,55 +21,90 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   </head>
-  <!--Nav-->
-  <nav  class="">
-    <div class="container-2 nav-wrapper">
-      <a href="index.html"><img class="brand-logo hide-on-med-and-down" src="static/H-Logo-Final.png" alt="Logo"></a>
-
-      <a href="index.html"><img class="brand-logo-mobile hide-on-large-only" src="static/H-Logo-Final.png" alt="Logo"></a>
-
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down ">
-        <li><a class="nav-text  " href="index.html">Home</a></li>     
-        <li>
-          <div class="dropdown1 ">
-            <span class="nav-text-services" >Services
-            </span>
-            <div class="dropdown-content1">
-              <a class="dropdown-content-text" href="commercial-services.html">Commercial</a>
-              <a class="dropdown-content-text" href="residential-services.html">Residential</a>      
-            </div>
-          </div>
-        </li>
-        <li><a class="nav-text active-nav" href="portfolio.html">Portfolio</a></li>   
-        <li>
-          <div class="dropdown1 ">
-            <span class="nav-text-services" >About
-            </span>
-            <div class="dropdown-content1">
-              <a class="dropdown-content-text" href="about.html">About Us</a>
-              <a class="dropdown-content-text"  href="vinylexplained.html">About Vinyl</a>
-            </div>      
-          </div>
-        </li>
-        <li><a class="nav-text " href="contact.html">Contact</a></li>
-      </ul>
+   <!--Nav-->
+   <nav  class="hide-on-med-and-down">
+    <div class="container-2  nav-wrapper">
+       <a href="index.html"><img class="brand-logo  hide-on-med-and-down" src="../static/how_logo_updated.png" alt="House of Wrap Logo"></a>
+       <a href="index.html"><img class="brand-logo-mobile hide-on-large-only" src="../static/H-Logo-Final.png" alt="House of Wrap Logo"></a>
+       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+       <ul id="nav-mobile" class="right hide-on-med-and-down ">
+          <li><a class="nav-text  " href="index.html">Home</a></li>
+          <li>
+             <div class="dropdown1 ">
+                <span class="nav-text-services" >Services
+                </span>
+                <div class="dropdown-content1">
+                  <a class="dropdown-content-text" href="services/doors.html">Doors</a>
+                  <a class="dropdown-content-text" href="services/cabinets.html">Cabinets</a>
+                  <a class="dropdown-content-text" href="services/countertops.html">Desk & Countertops</a>
+                  <a class="dropdown-content-text" href="services/millwork.html">Millwork</a>
+                  <a class="dropdown-content-text" href="services/walls-and-panels.html">Walls & Panels</a>
+                  <a class="dropdown-content-text" href="services/elevators.html">Elevators</a>
+                  <a class="dropdown-content-text" href="services/exterior.html">Exterior</a>    
+                </div>
+             </div>
+          </li>
+          <li><a class="nav-text active-nav2" href="portfolio.html">Portfolio</a></li>
+          <li>
+             <div class="dropdown1 ">
+                <span class="nav-text-services" >About
+                </span>
+                <div class="dropdown-content1">
+                   <a class="dropdown-content-text" href="about.html">About Us</a>
+                   <a class="dropdown-content-text"  href="vinylexplained.html">About Vinyl</a>
+                </div>
+             </div>
+          </li>
+          <li><a class="nav-text " href="contact.html">Contact</a></li>
+       </ul>
     </div>
-
-  </nav>
-<!--Mobile Nav-->
-  <ul class="sidenav" id="mobile-demo">
-        <li><a class="nav-text2 " href="index.html">Home</a></li>
-        <li><a class="nav-text2" href="portfolio.html">Portfolio</a></li>
-       <li><a class="nav-text2 non-hover" >Services</a></li>
-          <li><a class="nav-text2 indent" href="residential-services.html">Residential</a></li>
-          <li><a class="nav-text2 indent" href="commercial-services.html">Commercial</a></li>
-       <li><a class="nav-text2 non-hover" >About</a></li>
-          <li><a class="nav-text2 indent" href="vinylexplained.html">Vinyl</a></li>
-          <li><a class="nav-text2 indent" href="about.html">Us</a></li>
-        <li><a class="nav-text2" href="contact.html">Contact</a></li>
+ </nav>
+ <!--Mobile Nav-->
+ <!--Mobile Nav-->
+ <div class="how-flag-banner hide-on-large-only ">
+    <div class="flag-text-container2  ">
+       <img class="canadian-maple-leaf" src="../images/new_images/misc/canada-national-fabric-flag-symbol-international-world-north-america-country_113767-1642.avif" alt="Canadian Flag">
+       <span class="brand-name2  ">House of Wrap</span>
+    </div>
+ </div>
+ <nav class="hide-on-large-only mobile-nav-bg">
+    <div>
+       <a href="index.html"><img class="brand-logo-mobile hide-on-large-only" src="../static/how_logo_circle.png" alt="House of Wrap Logo"></a>
+       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+       <li>
+          <a href="index.html"><img class="brand-logo-m  " src="../static/how_logo_updated.png" alt="House of Wrap Logo"></a></br>
+       </li>
+       <li><a class="nav-text2" href="index.html">Home</a></li>
+       <li><a class="nav-text2" href="portfolio.html">Portfolio</a></li>
+       <!-- SERVICES DROPDOWN -->
+       <li>
+          <a class="nav-text2 dropdown-toggle" href="#!" data-group="service-link" style="display: inline-flex; align-items: center;">
+          Services
+          <i class="material-icons" style="margin-left: 6px;">expand_more</i>
+          </a>
+       </li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/doors.html">Doors</a></li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/cabinets.html">Cabinets</a></li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/countertops.html">Desk & Countertops</a></li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/millwork.html">Millwork</a></li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/walls-and-panels.html">Walls & Panels</a></li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/elevators.html">Elevators</a></li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/exterior.html">Exterior</a></li>
+       <!-- ABOUT DROPDOWN -->
+       <li>
+          <a class="nav-text2 dropdown-toggle" href="#!" data-group="about-link" style="display: inline-flex; align-items: center;">
+          About
+          <i class="material-icons" style="margin-left: 6px;">expand_more</i>
+          </a>
+       </li>
+       <li class="about-link hidden"><a class="nav-text3 indent" href="vinylexplained.html">About Vinyl</a></li>
+       <li class="about-link hidden"><a class="nav-text3 indent" href="about.html">About Us</a></li>
+       <li><a class="nav-text2" href="contact.html">Contact</a></li>
     </ul>
-<!--Mobile Nav-->
+ </nav>
+
 
   <body >
 
@@ -79,395 +114,2188 @@
 
 
     <div style="margin-top: 10vw;"class="container">
-      <hr class=" margin-top-mobile line-blue hide-on-med-and-down">
-      <div class="row center margin-top-mobile-text ">
-        <h1 class="h1-text-center1"><b class="h1-color-blue">Our</b> Work.</h1>
-      </div>
+    
     </div>
-    <section class="aboutus-first-container" style="min-height: 1000px;"> 
-      <section class="portfolio-section" style="min-height: 1000px;">
-          <div class="container">
-    <!--         <h2 class="title">Portfolio</h2> -->
-            <span class="hr-role"></span>
-            <div class="portfolio-tab">
-              <ul id="filters" class="clearfix">
-                  <li class="filter active" data-filter=".renovations, .commercial, .videos, .doors, .counter, .cabinets, .walls, .surrounds, .windows ">all</li>
-                  <li class="filter" data-filter=".renovations">Full Renovations</li>
-                  <li class="filter " data-filter=".commercial">Commercial</li>
-                  <li class="filter" data-filter=".videos">Videos</li>
-                  <li class="filter" data-filter=".doors">Doors</li>
-                  <li class="filter" data-filter=".counter">Counters</li>
-                  <li class="filter" data-filter=".cabinets">Cabinets</li>
-                  <li class="filter" data-filter=".walls">Walls</li>
-                  <li class="filter" data-filter=".surrounds">Surrounds</li>
-                  <li class="filter" data-filter=".windows">Windows</li>
+    <section  style="min-height: 1000px;"> 
+      <!------------------ Portfolio -------------->
+      <div class="work-section" style="background-color: #f2f2f2;" id="projects">
+        <div class="container">
+           <h4 class="custom-title-subhead " style="text-align: center !important; padding-bottom: 30px !important;">Our Work</h4>
+           <!-- Navigation Tabs -->
+           <ul class="work-tabs flex-wrap-tabs" style="padding-bottom: 30px !important;">
+              <li class="tab-link active" data-filter="all">All</li>
+              <li class="tab-link" data-filter="doors">Doors</li>
+              <li class="tab-link" data-filter="panels">Panels/Walls</li>
+              <li class="tab-link" data-filter="cabinets">Cabinets</li>
+              <li class="tab-link" data-filter="countertops">Countertop</li>
+              <li class="tab-link" data-filter="desk">Front Desk</li>
+              <li class="tab-link" data-filter="exterior">Exterior</li>
+              <li class="tab-link" data-filter="millwork">Millwork</li>
+              <li class="tab-link" data-filter="arches">Arches</li>
+              <li class="tab-link" data-filter="trim">Trim</li>
+              <li class="tab-link" data-filter="elevator">Elevator</li>
+              <li class="tab-link" data-filter="video">Videos</li>
+           </ul>
+           <!-- Image Grid -->
+           <div class="work-grid">
 
 
-              </ul>
-            </div>
-            <div class="portfolio-grid">
-        
-              <div class="portfolio counter" data-cat="counter">
-                <div class="portfolio-wrapper first">  
-                  <a href="portfolio.html"><div class="portfolio-bg"></div></a>
-                  <div class="label">
-                    <div class="label-text">
-                      <h4>Marble Countertop Resurface</h4>
-                      <span class="text-category">Resurfacing a damaged countertop</span>
-                      <a href="porfolio/portfolio-1.html" class="template-btn" >View</a>
-                    </div>
-                    <div class="label-bg"> </div>
-                  </div>
-                </div>
-              </div>
-              <!----Picture-->
-              <div class="portfolio walls" data-cat="walls commercial">
-                <div class="portfolio-wrapper second">  
-                  <a href="portfolio.html"><div class="portfolio-bg"></div></a>
-                  <div class="label">
-                    <div class="label-text">
-                      <h4>Marble Wall</h4>
-                      <span class="text-category">Resurfacing a wall with a matte marble vinyl</span>
-                      <a href="porfolio/portfolio-2.html" class="template-btn" >View</a>
-                    </div>
-                    <div class="label-bg"> </div>
-                  </div>
-                </div>
-              </div>
-              <!----Picture-->
-              <div class="portfolio counter" data-cat="counter">
-                <div class="portfolio-wrapper third">  
-                  <a href="portfolio.html"><div class="portfolio-bg"></div></a>
-                  <div class="label">
-                    <div class="label-text">
-                      <h4>Marble Counter</h4>
-                      <span class="text-category">Resurfacing a washroom countertop</span>
-                      <a href="porfolio/portfolio-3.html" class="template-btn" >View</a>
-                    </div>
-                    <div class="label-bg"> </div>
-                  </div>
-                </div>
-              </div>  
-               <!----Door Picture-->
-               <div class="portfolio doors commercial" data-cat="doors commercial">
-                <div class="portfolio-wrapper fourth">  
-                  <a href="portfolio.html"><div class="portfolio-bg"></div></a>
-                  <div class="label">
-                    <div class="label-text">
-                      <h4>Scratched Door Resurface</h4>
-                      <span class="text-category">Resurfacing a scratched condo door to color match the original doors</span>
-                      <a href="porfolio/portfolio-4.html" class="template-btn" >View</a>
-                    </div>
-                    <div class="label-bg"> </div>
-                  </div>
-                </div>
-              </div>  
-               <!----Picture-->
-               <div class="portfolio counter" data-cat="counter">
-                <div class="portfolio-wrapper fifth">  
-                  <a href="portfolio.html"><div class="portfolio-bg"></div></a>
-                  <div class="label">
-                    <div class="label-text">
-                      <h4>Marble Counter</h4>
-                      <span class="text-category">Resurfacing a kitchen countertop</span>
-                      <a href="#" class="template-btn" >View</a>
-                    </div>
-                    <div class="label-bg"> </div>
-                  </div>
-                </div>
-              </div>  
-               <!----Picture-->
-               <div class="portfolio counter cabinets" data-cat="counter cabinets">
-                <div class="portfolio-wrapper nine">  
-                  <a href="portfolio-9.html"><div class="portfolio-bg"></div></a>
-                  <div class="label">
-                    <div class="label-text">
-                      <h4>Marble Counter and Grey Wooden Cabinets</h4>
-                      <span class="text-category">Resurfacing a washroom countertop and cabinet</span>
-                      <a href="#" class="template-btn" >View</a>
-                    </div>
-                    <div class="label-bg"> </div>
-                  </div>
-                </div>
-              </div>  
-              <!----Picture-->
-              <div class="portfolio counter" data-cat="counter">
-                <div class="portfolio-wrapper ten">  
-                  <a href="portfolio.html"><div class="portfolio-bg"></div></a>
-                  <div class="label">
-                    <div class="label-text">
-                      <h4>Kitchen Marble Counter</h4>
-                      <span class="text-category">Resurfacing a kitchen countertop</span>
-                      <a href="porfolio/portfolio-5.html" class="template-btn" >View</a>
-                    </div>
-                    <div class="label-bg"> </div>
-                  </div>
-                </div>
-              </div>  
-              <!----Picture-->
-              <div class="portfolio counter" data-cat="counter">
-                <div class="portfolio-wrapper six">  
-                  <a href="portfolio.html"><div class="portfolio-bg"></div></a>
-                  <div class="label">
-                    <div class="label-text">
-                      <h4>Kitchen Marble Counter</h4>
-                      <span class="text-category">Resurfacing a kitchen countertop</span>
-                      <a href="porfolio/portfolio-5.html" class="template-btn" >View</a>
-                    </div>
-                    <div class="label-bg"> </div>
-                  </div>
-                </div>
-              </div>  
-              <!----Picture-->
-              <div class="portfolio commercial surrounds" data-cat="commercial surrounds">
-                <div class="portfolio-wrapper seven">  
-                  <a href="portfolio.html"><div class="portfolio-bg"></div></a>
-                  <div class="label">
-                    <div class="label-text">
-                      <h4>Condo Door Surrounds</h4>
-                      <span class="text-category">Resurfacing scratched condo door surrounds</span>
-                      <a href="porfolio/portfolio-6.html" class="template-btn" >View</a>
-                    </div>
-                    <div class="label-bg"> </div>
-                  </div>
-                </div>
-              </div>  
-              <!----Picture-->
-              <div class="portfolio commercial" data-cat="commercial">
-                <div class="portfolio-wrapper eight">  
-                  <a href="portfolio.html"><div class="portfolio-bg"></div></a>
-                  <div class="label">
-                    <div class="label-text">
-                      <h4>Steel Baseboards</h4>
-                      <span class="text-category">Resurfacing baseboards in steel textured vinyl</span>
-                      <a href="porfolio/portfolio-8.html" class="template-btn" >View</a>
-                    </div>
-                    <div class="label-bg"> </div>
-                  </div>
-                </div>
-              </div> 
-               <!----Picture-->
-               <div class="portfolio commercial windows" data-cat="commercial windows">
-                <div class="portfolio-wrapper twelve">  
-                  <a href="portfolio.html"><div class="portfolio-bg"></div></a>
-                  <div class="label">
-                    <div class="label-text">
-                      <h4>Window Frosting</h4>
-                      <span class="text-category">Resurfacing baseboards in steel textured vinyl</span>
-                      <a href="porfolio/portfolio-11.html" class="template-btn" >View</a>
-                    </div>
-                    <div class="label-bg"> </div>
-                  </div>
-                </div>
-              </div> 
-              <!----Picture-->
-              <div class="portfolio cabinets " data-cat="cabinets ">
-                <div class="portfolio-wrapper thirteen">  
-                  <a href="portfolio.html"><div class="portfolio-bg"></div></a>
-                  <div class="label">
-                    <div class="label-text">
-                      <h4>Cabinets Resurface</h4>
-                      <span class="text-category">Cabinets Resurface</span>
-                      <a href="porfolio/portfolio-12.html" class="template-btn" >View</a>
-                    </div>
-                    <div class="label-bg"> </div>
-                  </div>
-                </div>
-              </div> 
-               <!----Picture-->
-               <div class="portfolio windows commercial" data-cat="commercial windows">
-                <div class="portfolio-wrapper eleven">  
-                  <a href="portfolio.html"><div class="portfolio-bg"></div></a>
-                  <div class="label">
-                    <div class="label-text">
-                      <h4>Window Frosting</h4>
-                      <span class="text-category">Premium 3M window frost</span>
-                      <a href="porfolio/portfolio-10.html" class="template-btn" >View</a>
-                    </div>
-                    <div class="label-bg"> </div>
-                  </div>
-                </div>
-              </div> 
-               <!----Videos-->
-               <div class="portfolio videos commercial surrounds" data-cat="videos commercial surrounds">
-                <div class="video-container">
-                  <iframe src="https://youtube.com/embed/OPLfyJsoxyk?feature=share" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-              <!----Videos-->
-              <div class="portfolio videos commercial" data-cat="videos commercial">
-                  <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/-DoX3zRYt7Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-              </div>
-
-             <!----Videos-->
-             <div  class="portfolio doors videos commercial " data-cat="doors videos commercial">
-              <div class="video-container">
-                <iframe src="https://youtube.com/embed/PHOnGd4bRtw?feature=share" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
-          
-             <!----Videos-->  
-             <div class="portfolio counter videos cabinets" data-cat="videos counter cabinets">
-              <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/x611npE7SQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-          </div>
-          <!----Videos-->
-             <div class="portfolio videos windows commercial" data-cat="videos windows commercial">
-              <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/q6qhrtA3auU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-          </div>
-          <!----Videos-->
-          <div class="portfolio videos counter" data-cat="videos counter">
-            <div class="video-container">
-              <iframe src="https://www.youtube.com/embed/z6mB-Wz09gM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+ <!-- Project 10 -->
+ <div class="project-wrapper">
+  <div class="work-item" data-tags="cabinets" onclick="openCustomCarousel(10)">
+    <img src="../images/new_images/cabinets/cab_studio_11.jpg" alt="AFTER: Studio Kitchen Resurfaced in Textured Wood" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal10" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(10)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_studio_11.jpg" alt="AFTER: Studio Kitchen Resurfaced in Textured Wood">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Kitchen Resurfaced in Textured Wood</div>
         </div>
-        
-          <!----See More-->
-              <div class="portfolio renovations commercial videos doors counter cabinets walls surrounds windows" data-cat="windows renovations commercial videos doors counter cabinets walls surrounds">
-                <div class="portfolio-wrapper view">  
-                  <a href="portfolio.html"><div class="portfolio-bg"></div></a>
-                  <div class="label">
-                    <div style="margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 32%;
-                    -ms-transform: translateY(-50%);
-                    transform: translateY(-50%); "class="label-text">
-                      <a href="https://www.instagram.com/houseofwrapcanada/" target="_blank" style="font-size: 16px !important;" class="template-btn" >View More</a>
-                    </div>
-                    <div class="label-bg"> </div>
-                  </div>
-                </div>
-              </div>  
-            
-            </div>
-          </div>
-        </section>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/Mintroom-2.jpg" alt="AFTER: Studio Kitchen Resurfaced in Textured Wood">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Studio Kitchen Resurfaced in Textured Wood</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_studio_5.jpg" alt="AFTER: Studio Kitchen Resurfaced in Textured Wood">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Studio Kitchen Resurfaced in Textured Wood</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_studio_6.jpg" alt="AFTER: Studio Kitchen Resurfaced in Textured Wood">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Studio Kitchen Resurfaced in Textured Wood</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_studio_8.jpg" alt="AFTER: Studio Kitchen Resurfaced in Textured Wood">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Studio Kitchen Resurfaced in Textured Wood</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_studio_9.jpg" alt="AFTER: Studio Kitchen Resurfaced in Textured Wood">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Studio Kitchen Resurfaced in Textured Wood</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_studio_10.jpg" alt="AFTER: Studio Kitchen Resurfaced in Textured Wood">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Studio Kitchen Resurfaced in Textured Wood</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_studio_7.jpg" alt="BEFORE: Outdated Studio Kitchen in an Emerald Palette">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Outdated Studio Kitchen in an Emerald Palette</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+ <!-- Project 35 -->
+ <div class="project-wrapper">
+  <div class="work-item" data-tags="trim millwork doors" onclick="openCustomCarousel(35)">
+    <img src="../porfolio/images/Steel_Surrounds3.png" alt="AFTER: Brushed Steel Door Surrounds" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal35" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(35)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../porfolio/images/Steel_Surrounds3.png" alt="AFTER: Brushed Steel Door Surrounds">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Brushed Steel Door Surrounds</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../porfolio/images/Steel_Surrounds6.jpeg"  alt="AFTER: Brushed Steel Door Surrounds">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Brushed Steel Door Surrounds</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../porfolio/images/Steel_Surrounds2.png" alt="BEFORE: Damaged and Scratch Surrounds">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Damaged and Scratch Surrounds</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../porfolio/images/Steel_Surrounds4.jpeg" alt="BEFORE: Damaged and Scratch Surrounds">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Damaged and Scratch Surrounds (before)</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+ <!-- Project 22 -->
+ <div class="project-wrapper">
+  <div class="work-item" data-tags="doors" onclick="openCustomCarousel(22)">
+    <img src="../images/new_images/door/dr_reddoor_3.jpg" alt="AFTER: Stylish Door Resurfaced with a Glossy Red Finish" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal22" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(22)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_reddoor_3.jpg" alt="AFTER: Stylish Door Resurfaced with a Glossy Red Finish">
+          <div class="slide-label-top">DURING</div>
+          <div class="slide-label-bottom">Stylish Door Resurfaced with a Glossy Red Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_reddoor_2.jpg" alt="AFTER: Technician Resurfacing a Door with a Glossy Red Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Technician Resurfacing a Door with a Glossy Red Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_reddoor_4.jpg" alt="AFTER: Stylish Door Resurfaced with a Glossy Red Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Stylish Door Resurfaced with a Glossy Red Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_reddoor_1.jpg" alt="BEFORE: Damaged Door to be Resurfaced in Glossy Red">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Damaged Door to be Resurfaced in Glossy Red</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 28 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="trim millwork" onclick="openCustomCarousel(28)">
+    <img src="../images/new_images/trim/trim_menblack_1.jpg" alt="AFTER: Corner Guards Resurfaced in Matte Black" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal28" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(28)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/trim/trim_menblack_1.jpg" alt="AFTER: Corner Guards Resurfaced in Matte Blackg">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Corner Guards Resurfaced in Matte Black</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/trim/trim_menblack_3.jpg" alt="AFTER: Corner Guards Resurfaced in Matte Black">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Corner Guards Resurfaced in Matte Black</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/trim/trim_menblack_4.jpg" alt="AFTER: Corner Guards Resurfaced in Matte Black">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Corner Guards Resurfaced in Matte Black</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/trim/trim_menblack_5.jpg" alt="AFTER: Corner Guards Resurfaced in Matte Black">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Corner Guards Resurfaced in Matte Black</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/trim/trim_menblack_6.jpg" alt="AFTER: Corner Guards Resurfaced in Matte Black">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Corner Guards Resurfaced in Matte Black</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/trim/trim_menblack_2.jpg" alt="BEFORE: Stainless Steel Corner Guards to be Resurfaced">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Stainless Steel Corner Guards to be Resurfaced</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+ <!-- Red Door -->
+ <div class="project-wrapper">
+  <div class="work-item" data-tags="millwork trim" onclick="openCustomCarousel(26)">
+    <img src="../images/new_images/trim/trim_brown_1.jpg" alt="AFTER: Automatic Overhead Door Panels with a Color-Matching Chocolate Brown Finish" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal26" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(26)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/trim/trim_brown_1.jpg" alt="AFTER: Automatic Overhead Door Panels with a Color-Matching Chocolate Brown Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Automatic Overhead Door Panels with a Color-Matching Chocolate Brown Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/trim/trim_brown_2.jpg" alt="AFTER: Automatic Overhead Door Panels with a Color-Matching Chocolate Brown Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Automatic Overhead Door Panels with a Color-Matching Chocolate Brown Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/trim/trim_brown_3.jpg" alt="BEFORE: Overhead Door Panel to be Resurfaced and Color-Matched">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Overhead Door Panel to be Resurfaced and Color-Matched</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 7 Cabinet Resurfacing Grey Wood -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="cabinets" onclick="openCustomCarousel(7)">
+    <img src="../images/new_images/cabinets/cab_grey_4.jpg" alt="AFTER: Resurfaced Kitchen Cabinet in Rich Textured Wood" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal7" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(7)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_grey_4.jpg" alt="AFTER: Resurfaced Kitchen Cabinet in Rich Textured Wood">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Resurfaced Kitchen Cabinet in Rich Textured Wood</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_grey_3.jpg" alt="AFTER: Kitchen Cabinets Resurfaced in Textured Grey Wood">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Kitchen Cabinets Resurfaced in Textured Grey Wood</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_grey_1.jpg" alt="BEFORE & AFTER: Outdated Kitchen Cabinets Resurfaced in Textured Grey Wood">
+          <div class="slide-label-top slide-label-top-before">BEFORE & AFTER</div>
+          <div class="slide-label-bottom">BEFORE & AFTER: Outdated Kitchen Cabinets Resurfaced in Textured Grey Wood</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_grey_2.jpg" alt="BEFORE: Outdated Kitchen Cabinets to be Resurfaced">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Outdated Kitchen Cabinets to be Resurfaced</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+ <!-- Project 29 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="panels" onclick="openCustomCarousel(29)">
+    <img src="../images/new_images/walls_panels/wall_mrl_1.jpg" alt="AFTER: Wall Panels Resurfaced with a Natural Oak Finish" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal29" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(29)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/walls_panels/wall_mrl_1.jpg" alt="AFTER: Wall Panels Resurfaced with a Natural Oak Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Wall Panels Resurfaced with a Natural Oak Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/walls_panels/wall_mrl_3.jpg" alt="AFTER: Wall Panels Resurfaced with a Natural Oak Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Wall Panels Resurfaced with a Natural Oak Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/walls_panels/wall_mrl_5.jpg" alt="AFTER: Apartment Doors Resurfaced with a Natural Oak Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Apartment Doors Resurfaced with a Natural Oak Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/walls_panels/wall_mrl_6.jpg" alt="AFTER: Wall Panels Resurfaced with a Natural Oak Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Wall Panels Resurfaced with a Natural Oak Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/walls_panels/wall_mrl_7.jpg" alt="AFTER: Wall Panels Resurfaced with a Natural Oak Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Wall Panels Resurfaced with a Natural Oak Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/walls_panels/wall_mrl_2.jpg" alt="BFORE: Wall Panels to be Resurfaced">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Wall Panels to be Resurfaced</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/walls_panels/wall_mrl_4.jpg" alt="BFORE: Wall Panels to be Resurfaced">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Wall Panels to be Resurfaced</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+ <!-- Project 19 -->
+ <div class="project-wrapper">
+  <div class="work-item" data-tags="project-19" onclick="openCustomCarousel(19)">
+    <img src="../images/new_images/door/dr_mrl_after_lobby_1.jpg" alt="AFTER: Downtown Condominium Lobby Door Resurfaced in Natural Oak" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal19" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(19)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_mrl_lobby_before_1.jpg" alt="AFTER: Downtown Condominium Lobby Door Resurfaced in Natural Oak">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Downtown Condominium Lobby Door Resurfaced in Natural Oak</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_mrl_lobby_before_2.jpg" alt="AFTER: Downtown Condominium Lobby Door Resurfaced in Natural Oak">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Downtown Condominium Lobby Door Resurfaced in Natural Oak</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_mrl_after_lobby_1.jpg" alt="AFTER: Downtown Condominium Lobby Door Resurfaced in Natural Oak">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Downtown Condominium Lobby Door Resurfaced in Natural Oak</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_mrl_after_lobby_2.jpg" alt="AFTER: Downtown Condominium Lobby Door Resurfaced in Natural Oak">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Downtown Condominium Lobby Door Resurfaced in Natural Oak</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_mrl_after_lobby_3.jpg" alt="AFTER: Downtown Condominium Lobby Door & Door Frames Resurfaced in Natural Oak">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Downtown Condominium Lobby Door & Door Frames Resurfaced in Natural Oak</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_mrl_after_lobby_4.jpg" alt="AFTER: Downtown Condominium Lobby Door & Door Frames Resurfaced in Natural Oak">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Downtown Condominium Lobby Door & Door Frames Resurfaced in Natural Oak</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_mrl_after_lobby_5.jpg" alt="AFTER: Downtown Condominium Lobby Doors & Door Frames Resurfaced in Natural Oak">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Downtown Condominium Lobby Door & Door Frames Resurfaced in Natural Oak</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_mrl_after_lobby_6.jpg" alt="AFTER: Downtown Condominium Lobby Door & Door Frames Resurfaced in Natural Oak">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Downtown Condominium Lobby Door & Door Frames Resurfaced in Natural Oak</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 8 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="cabinets" onclick="openCustomCarousel(8)">
+    <img src="../images/new_images/cabinets/cab_miso_1.jpg" alt="AFTER: Kitchen Elegantly Resurfaced in Solid White" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal8" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(8)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_miso_1.jpg" alt="AFTER: Kitchen Elegantly Resurfaced in Solid White">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Kitchen Elegantly Resurfaced in Solid White</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_miso_2.jpg" alt="AFTER: Kitchen Elegantly Resurfaced in Solid White">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Kitchen Elegantly Resurfaced in Solid White</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_miso_3.jpg" alt="BEFORE: Kitchen Cabinets and Panels to be Upgraded">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Kitchen Cabinets and Panels to be Upgraded</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 9 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="cabinets" onclick="openCustomCarousel(9)">
+    <img src="../images/new_images/cabinets/cab_red_after_1.jpg" alt="AFTER: Kitchen  Cabinets Resurfaced in Matte White" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal9" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(9)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_red_after_1.jpg" alt="cab_red_after_1.jpg">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Kitchen Cabinets Resurfaced in Matte White</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_red_after_2.jpg" alt="AFTER: Kitchen Cabinets Resurfaced in Matte White">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Kitchen Cabinets Resurfaced in Matte White</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_red_after_3.jpg" alt="AFTER: Kitchen Cabinets Resurfaced in Matte White">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Kitchen Cabinets Resurfaced in Matte White</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_red_after_4.jpg" alt="AFTER: Kitchen Island Resurfaced in Matte White">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Kitchen Island Resurfaced in Matte White</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_red_before_2.jpg" alt="BEFORE: Glossy Red Kitchen Cabinets and Panels Awaiting Upgrade">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Glossy Red Kitchen Cabinets and Panels Awaiting Upgrade (before)</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_red_before_3.jpg" alt="BEFORE: Glossy Red Kitchen Cabinets and Panels Awaiting Upgrade">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Glossy Red Kitchen Cabinets and Panels Awaiting Upgrade (before)</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_red_before_1.jpg" alt="BEFORE: Glossy Red Kitchen Cabinets and Panels Awaiting Upgrade">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Glossy Red Kitchen Cabinets and Panels Awaiting Upgrade (before)</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+ <!-- Project 30 -->
+ <div class="project-wrapper">
+  <div class="work-item" data-tags="elevator" onclick="openCustomCarousel(30)">
+    <img src="../images/new_images/walls_panels/el_wall_foolio_4.jpg" alt="AFTER: Elevator Cabin Panels Resurfaced with a Modern Wood Finish" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal30" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(30)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/walls_panels/el_wall_foolio_4.jpg" alt="AFTER: Elevator Cabin Panels Resurfaced with a Modern Wood Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Elevator Cabin Panels Resurfaced with a Modern Wood Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/walls_panels/el_wall_foolio_3.jpg" alt="AFTER: Elevator Cabin Panels Resurfaced with a Modern Wood Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Elevator Cabin Panels Resurfaced with a Modern Wood Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/walls_panels/el_wall_foolio_5.jpg" alt="AFTER: Elevator Cabin Panels Resurfaced with a Modern Wood Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Elevator Cabin Panels Resurfaced with a Modern Wood Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/walls_panels/el_wall_foolio_6.jpg" alt="AFTER: Elevator Cabin Panels Resurfaced with a Modern Wood Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Elevator Cabin Panels Resurfaced with a Modern Wood Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/walls_panels/el_wall_foolio_1.jpg" alt="BEFORE: Elevator Cabin Panels to be Resurfaced">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Elevator Cabin Panels to be Resurfaced  (before)</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/walls_panels/el_wall_foolio_2.jpg" alt="BEFORE: Elevator Cabin Panels to be Resurfaced">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Elevator Cabin Panels to be Resurfaced  (before)</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 12 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="cabinets countertops" onclick="openCustomCarousel(12)">
+    <img src="../images/new_images/countertop/cab_co_marblewhite_6.jpg" alt="AFTER: Countertop Resurfaced in Contemporary Grey Marble with Clean White Veining" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal12" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(12)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/countertop/cab_co_marblewhite_6.jpg" alt="AFTER: Countertop Resurfaced in Contemporary Grey Marble with Clean White Veining">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Countertop Resurfaced in Contemporary Grey Marble with Clean White Veining</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/countertop/cab_co_marblewhite_1.jpg" alt="AFTER: Cabinets and Countertops Resurfaced in Matte White and Marble">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Cabinets and Countertops Resurfaced in Matte White and Marble</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/countertop/cab_co_marblewhite_5.jpg" alt="AFTER: Cabinets and Countertops Resurfaced in Matte White and Marble">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Resurfaced Matte White Cabinets Paired with Elegant Marble Surfaces</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/countertop/cab_co_marblewhite_7.jpg" alt="AFTER: Resurfaced Matte White Cabinets Paired with Elegant Marble Surfaces">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Resurfaced Matte White Cabinets Paired with Elegant Marble Surfaces</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/countertop/cab_co_marblewhite_8.jpg" alt="AFTER: Countertops Upgrade with Abrasive Resistant Marble">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Countertops Resurfaced in Abrasive Resistant Marble</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/countertop/cab_co_marblewhite_9.jpg" alt="AFTER: Resurfaced Matte White Cabinets Paired with Elegant Marble Surfaces">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Resurfaced Matte White Cabinets Paired with Elegant Marble Surfaces</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/countertop/cab_co_marblewhite_2.jpg" alt="BEFORE: Bland Counters and Original Cabinets">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Bland Counters and Original Cabinets (before)</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/countertop/cab_co_marblewhite_4.jpg" alt="BEFORE: Counters and Cabinets Ready for Resurfacing">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Counters and Cabinets Ready for Resurfacing (before)</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 13 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="countertops" onclick="openCustomCarousel(13)">
+    <img src="../images/new_images/countertop/co_whitemarble_1.jpg" alt="AFTER: Beautifully Resurfaced White Marble Countertop" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal13" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(13)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/countertop/co_whitemarble_1.jpg" alt="AFTER: Beautifully Resurfaced White Marble Countertop">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Beautifully Resurfaced White Marble Countertop</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/countertop/co_whitemarble_2.jpg" alt="AFTER: Beautifully Resurfaced White Marble Countertop">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Beautifully Resurfaced White Marble Countertop</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/countertop/co_whitemarble_3.jpg" alt="BEFORE: Countertop Ready to be Resurfaced">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Countertop Ready to be Resurfaced (before)</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/countertop/co_whitemarble_4.jpg" alt="BEFORE: Countertop Ready to be Resurfaced">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Countertop Ready to be Resurfaced (before)</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 14 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="desk countertops" onclick="openCustomCarousel(14)">
+    <img src="../images/new_images/desk/desk_office_4.jpg" alt="AFTER: Reception Desk Resurfaced in Matte White and Glossy White Finishes" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal14" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(14)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/desk/desk_office_4.jpg" alt="AFTER: Reception Desk Resurfaced in Matte White and Glossy White Finishes">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Reception Desk Resurfaced in Matte White and Glossy White Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/desk/desk_office_3.jpg" alt="AFTER: Reception Desk Resurfaced in Matte White and Glossy White Finishes">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Reception Desk Resurfaced in Matte White and Glossy White Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/desk/desk_office_2.jpg" alt="AFTER: Reception Desks Resurfaced in Matte White and Glossy White Finishes">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Reception Desks Resurfaced in Matte White and Glossy White Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/desk/desk_office_5.jpg" alt="AFTER: Reception Desk Cabinets Resurfaced in Matte White">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Reception Desk Cabinets Resurfaced in Matte White</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/desk/desk_office_1.jpg" alt="BEFORE: Reception Desk and Panels to be Resurfaced in Matte White and Glossy White Finishes">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Reception Desk and Panels to be Resurfaced in Matte White and Glossy White Finishes (before)</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 15 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="doors" onclick="openCustomCarousel(15)">
+    <img src="../images/new_images/door/dr_employee_1.jpg" alt="Resurfacing a Condominium Door in Natural Oak" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal15" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(15)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_employee_1.jpg" alt="Resurfacing a Condominium Door in Natural Oak">
+          <div class="slide-label-top">DURING</div>
+          <div class="slide-label-bottom">Resurfacing a Condominium Door in Natural Oak</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 16 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="doors" onclick="openCustomCarousel(16)">
+    <img src="../images/new_images/door/dr_leather_2.jpg" alt="AFTER: Apartment Door Frames Resurfaced with a Chic Embossed Finish" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal16" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(16)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_leather_2.jpg" alt="AFTER: Apartment Door Frames Resurfaced with a Chic Embossed Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Apartment Door Frames Resurfaced with a Chic Embossed Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_leather_4.jpg" alt="AFTER: Apartment Door Frames Resurfaced with a Chic Embossed Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Apartment Door Frames Resurfaced with a Chic Embossed Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_leather_3.jpg" alt="AFTER: Apartment Door Frames Resurfaced with a Chic Embossed Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Apartment Door Frames Resurfaced with a Chic Embossed Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_leather_1.jpg" alt="BEFORE: Apartment Door Frames to be Resurfaced in a Stylish Finish">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Apartment Door Frames to be Resurfaced in a Stylish Finish (before)</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 17 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="project-17" onclick="openCustomCarousel(17)">
+    <img src="../images/new_images/door/dr_men_1.jpg" alt="Condominium Door in a High-Traffic Area Resurfaced with a Soft Wood Finish" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal17" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(17)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_men_1.jpg" alt="AFTER: Condominium Door in a High-Traffic Area Resurfaced with a Soft Wood Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Condominium Door in a High-Traffic Area Resurfaced with a Soft Wood Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_men_2_before.jpg" alt="BEFORE: Busy Condominium Door to be Resurfaced">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Busy Condominium Door to be Resurfaced (before)</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 5 - Gloss White Cabinets-->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="cabinets" onclick="openCustomCarousel(5)">
+    <img src="../images/new_images/cabinets/cab_chr_3.jpg" alt="AFTER: Kitchen Cabinets and Panels Resurfaced with a Cream White Finish" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal5" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(5)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_chr_3.jpg" alt="AFTER: Kitchen Cabinets and Panels Resurfaced with a Cream White Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Kitchen Cabinets and Panels Resurfaced with a Cream White Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_chr_4.jpg" alt="AFTER: Kitchen Cabinets Resurfaced with a Cream White Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Kitchen Cabinets Resurfaced with a Cream White Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_chr_1.jpg" alt="BEFORE: Kitchen Cabinets and Panels to be Resurfaced">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Kitchen Cabinets and Panels to be Resurfaced (before)</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_chr_2.jpg" alt="BEFORE: Kitchen Cabinets and Panels to be Resurfaced">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Kitchen Cabinets and Panels to be Resurfaced (before)</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 18 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="doors" onclick="openCustomCarousel(18)">
+    <img src="../images/new_images/door/dr_menlobby_1.jpg" alt="AFTER: Condominium Door in a High-Traffic Area Resurfaced with a Soft Wood Finish" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal18" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(18)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_menlobby_1.jpg" alt="AFTER: Condominium Door in a High-Traffic Area Resurfaced with a Soft Wood Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Condominium Door in a High-Traffic Area Resurfaced with a Soft Wood Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_menlobby_3.jpg" alt="AFTER: Condominium Door in a High-Traffic Area Resurfaced with a Soft Wood Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Condominium Door in a High-Traffic Area Resurfaced with a Soft Wood Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_menlobby_2.jpg" alt="BEFORE: Busy Condominium Door to be Resurfaced">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Busy Condominium Door to be Resurfaced (before)</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+
+<!-- Project 21 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="doors" onclick="openCustomCarousel(21)">
+    <img src="../images/new_images/door/dr_mrl_suite1.jpg" alt="AFTER: Downtown Apartment Door Resurfaced with a Natural Oak Finish" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal21" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(21)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/door/dr_mrl_suite1.jpg" alt="AFTER: Downtown Apartment Door Resurfaced with a Natural Oak Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Downtown Apartment Door Resurfaced with a Natural Oak Finish</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+
+<!-- Project 24 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="exterior" onclick="openCustomCarousel(24)">
+    <img src="../images/new_images/exterior/ex_beams1.jpg" alt="Exterior Beam Resurfacing for a California-Based Condo" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal24" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(24)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/exterior/ex_beams1.jpg" alt="Exterior Beam Resurfacing for a California-Based Condo">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Exterior Beam Resurfacing for a California-Based Condo</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/exterior/ex_beams3.jpg" alt="Exterior Beams Resurfaced with a UV Resistant Natural Wood Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Exterior Beam Resurfaced with a UV Resistant Natural Wood Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/exterior/ex_beams4.jpg" alt="Exterior Beams Resurfaced with a UV Resistant Natural Wood Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Exterior Beams Resurfaced with a UV Resistant Natural Wood Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/exterior/ex_beams5.jpg" alt="Exterior Beams Resurfaced with an All-Weather-Resistant Natural Wood Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Exterior Beams Resurfaced with an All-Weather-Resistant Natural Wood Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/exterior/ex_beams6.jpg" alt="Exterior Beams Resurfaced with an All-Weather-Resistant Natural Wood Finish">
+          <div class="slide-label-top">DURING</div>
+          <div class="slide-label-bottom">Exterior Beams Resurfaced with an All-Weather-Resistant Natural Wood Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/exterior/ex_beams7.jpg" alt="Exterior Beams Resurfaced with an All-Weather-Resistant Natural Wood Finish">
+          <div class="slide-label-top">DURING</div>
+          <div class="slide-label-bottom">Exterior Beams Resurfaced with an All-Weather-Resistant Natural Wood Finish</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 25 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="millwork arches" onclick="openCustomCarousel(25)">
+    <img src="../images/new_images/millwork/mill_me_arch_3.jpg" alt="BEFORE: Preconstruction Condo Panels to be Resurfaced" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal25" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(25)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/millwork/mill_me_arch_3.jpg" alt="BEFORE: Preconstruction Condo Panels to be Resurfaced">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Preconstruction Condo Panels to be Resurfaced</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/millwork/mill_me_arch_4.jpg" alt="BEFORE: Preconstruction Condo Panels to be Resurfaced">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Preconstruction Condo Panels to be Resurfaced</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/millwork/mill_me_arch_5.jpg" alt="AFTER: Preconstruction Condo Panels Resurfaced With a Brass Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Preconstruction Condo Panels Resurfaced With a Brass Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/millwork/mill_me_arch_6.jpg" alt="AFTER: Preconstruction Condo Panels Resurfaced With a Brass Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Preconstruction Condo Panels Resurfaced With a Brass Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/millwork/mill_me_arch_8.jpg" alt="AFTER: Panels Resurfaced With a Brass Finish">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Panels Resurfaced With a Brass Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/millwork/mill_me_arch_1.jpg" alt="Technician Installing a Panel with a Brass Finish">
+          <div class="slide-label-top">DURING</div>
+          <div class="slide-label-bottom">Technician Installing a Panel with a Brass Finish</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/millwork/mill_me_arch_2.jpg" alt="Technician Installing a Panel with a Brass Finishg">
+          <div class="slide-label-top">DURING</div>
+          <div class="slide-label-bottom">Technician Installing a Panel with a Brass Finish</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+
+<!-- Project 27 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="trim millwork" onclick="openCustomCarousel(27)">
+    <img src="../images/new_images/trim/trim_gold_3.jpg" alt="AFTER: Ceiling Molding and Shelf Panels Resurfaced in Matte Black & White Marble, Respectively" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal27" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(27)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/trim/trim_gold_3.jpg" alt="AFTER: Ceiling Molding and Shelf Panels Resurfaced in Matte Black & White Marble, Respectively">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Ceiling Molding and Shelf Panels Resurfaced in Matte Black & White Marble, Respectively</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/trim/trim_gold_2.jpg" alt="AFTER: Shelf Panels Resurfaced with a White Marble Finish Featuring Black Veining">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Shelf Panels Resurfaced with a White Marble Finish Featuring Black Veining</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/trim/trim_gold_4.jpg" alt=”AFTER: Crown Molding Resurfaced in Matte Black">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Crown Molding Resurfaced in Matte Black</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/trim/trim_gold_5.jpg" alt="BEFORE: Gold Crown Moldling & Shelf Panels to be Resurfaced">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Gold Crown Moldling & Shelf Panels to be Resurfaced (before)</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/trim/trim_gold_6.jpg" alt="BEFORE: Gold Crown Moldling to be Resurfaced">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Gold Crown Moldling to be Resurfaced</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/trim/trim_gold_7.jpg" alt="BEFORE: Gold Crown Moldling to be Resurfaced">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Gold Crown Moldling to be Resurfaced</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/trim/trim_gold_1.jpg" alt="BEFORE: Gold Moldling to be Resurfaced">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Gold Moldling to be Resurfaced</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Project 31 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="panels" onclick="openCustomCarousel(31)">
+    <img src="../static/projects/ash-after-1-ig.jpg" alt="cab_chr_1.jpg" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal31" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(31)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../static/projects/ash-after-1-ig.jpg" alt="AFTER: Marble finished wall ">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Marble finished wall</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../static/projects/ash-after-2-ig.jpg" alt="AFTER: Marble finished wall">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Marble finished wall</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../static/projects/ash-after-3-ig.jpg" alt="AFTER: Marble finished wall">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Marble finished wall</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../static/projects/ash-before-ig.jpg" alt="BEFORE: Standard white wall">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Standard white wall (before)</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 32 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="countertops" onclick="openCustomCarousel(32)">
+    <img src="../static/projects/Simmones_Counter_Pic1.jpg" alt="cab_chr_1.jpg" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal32" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(32)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../static/projects/Simmones_Counter_Pic1.jpg" alt="AFTER: Marble Finished Countertop ">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Marble Finished Countertop</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../static/projects/Simmones_Counter_Pic3.jpg" alt="AFTER: Marble Finished Countertop ">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Marble Finished Countertop</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../static/projects/Simmones_Counter_Pic4.jpg" alt="BEFORE: Damaged Countertop ">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Damaged Countertop (before)</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../static/projects/Simmones_Counter_Pic2.jpg" alt="BEFORE: Damaged Countertop ">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Damaged Countertop (before)</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 33 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="doors" onclick="openCustomCarousel(33)">
+    <img src="../porfolio/images/IMG_2263.jpeg" alt="AFTER: Textured Condo Door Resurface" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal33" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(33)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../porfolio/images/IMG_2263.jpeg" alt="AFTER: Textured Condo Door Resurface">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Textured Condo Door Resurface</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../porfolio/images/IMG_2301.jpeg" alt="AFTER: Textured Condo Door Resurface">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Textured Condo Door Resurface</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../porfolio/images/IMG_2236.jpeg" alt="DURING: Installation Process">
+          <div class="slide-label-top">DURING</div>
+          <div class="slide-label-bottom">Installation Process</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../porfolio/images/IMG_2167.jpeg" alt="BEFORE: Sratched and Damaged Condo Door">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Sratched and Damaged Condo Door (before)</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 34 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="trim millwork" onclick="openCustomCarousel(34)">
+    <img src="../porfolio/images/Steel_Slatts5.jpeg" alt="After: Textured Steel Showroom Baseboards" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal34" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(34)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../porfolio/images/Steel_Slatts5.jpeg" alt="After: Textured Steel Showroom Baseboards Resurface">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Textured Steel Showroom Baseboards Resurface</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../porfolio/images/Steel_Slatts6.jpeg" aalt="After: Textured Steel Showroom Baseboards Resurface">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Textured Steel Showroom Baseboards Resurface</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../porfolio/images/Steel_Slatts4.jpeg" alt="After: Textured Steel Showroom Baseboards Resurface">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Textured Steel Showroom Baseboards Resurface</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../porfolio/images/Steel_Slatts2.jpeg" alt="During Resurface processs">
+          <div class="slide-label-top">DURING</div>
+          <div class="slide-label-bottom">Resurface Process</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../porfolio/images/Steel_Slatts1.jpeg" alt="Before: Damaged Baseboards ">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Damaged Baseboards (before)</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 6 Damaged White Matte Cabinets-->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="cabinets" onclick="openCustomCarousel(6)">
+    <img src="../images/new_images/cabinets/cab_dan_1-100.jpg" alt="BEFORE: Water Damaged Cabinet" class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal6" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(6)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_dan_1-100.jpg" alt="BEFORE: Water Damaged Cabinet">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Water Damaged Cabinet</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_dan_2-100.jpg" alt="BEFORE & AFTER: Worn Out Kitchen Cabinets Resurfaced in Matte White">
+          <div class="slide-label-top slide-label-top-before">BEFORE & AFTER</div>
+          <div class="slide-label-bottom">BEFORE & AFTER: Worn Out Kitchen Cabinets Resurfaced in Matte White</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_dan_3-100.jpg" alt="AFTER: Worn Out Kitchen Cabinets Resurfaced in Matte White">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Worn Out Kitchen Cabinets Resurfaced in Matte White</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../images/new_images/cabinets/cab_dan_4-100.jpg" alt="AFTER: Full View of Kitchen Cabinets Resurfaced in Matte White">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">Full View of Kitchen Cabinets Resurfaced in Matte White</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 36 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="countertops" onclick="openCustomCarousel(36)">
+    <img src="../porfolio/images/t-counterresurface.jpg" alt="After: White Marble Washroom Countertop Resurface " class="work-image">
+    <div class="image-arrow-overlay">&#10148;</div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal36" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(36)">&times;</span>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../porfolio/images/t-counterresurface.jpg" alt="After: White Marble Washroom Countertop Resurface ">
+          <div class="slide-label-top">AFTER</div>
+          <div class="slide-label-bottom">White Marble Washroom Countertop Resurface</div>
+        </div>
+      </div>
+      <div class="custom-slide">
+        <div class="slide-image-wrapper">
+          <img src="../porfolio/images/t-counterresurface-b.jpeg" alt="Before: Plain White Countertop">
+          <div class="slide-label-top slide-label-top-before">BEFORE</div>
+          <div class="slide-label-bottom">Plain White Countertop (before)</div>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 37 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="door trim video" onclick="openCustomCarousel(37)">
+    <img src="https://img.youtube.com/vi/OPLfyJsoxyk/maxresdefault.jpg" alt="VIDEO: Steel Surrounds Resurface" class="work-image video-thumb">
+    <div class="image-play-overlay">
+      <div class="play-button">&#9658;</div>
+    </div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal37" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(37)">&times;</span>
+      <!-- Slide 2 (YouTube Video) -->
+      <div class="custom-slide">
+        <div class="slide-image-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe src="https://www.youtube.com/embed/OPLfyJsoxyk?autoplay=1"
+            title="YouTube video"
+            frameborder="0"
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+          </iframe>
+  
+      
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 38 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="millwork trim video" onclick="openCustomCarousel(38)">
+    <img src="https://img.youtube.com/vi/-DoX3zRYt7Q/maxresdefault.jpg" alt="VIDEO: Baseboard Resurface" class="work-image video-thumb">
+    <div class="image-play-overlay">
+      <div class="play-button">&#9658;</div>
+    </div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal38" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(38)">&times;</span>
+      <!-- Slide 2 (YouTube Video) -->
+      <div class="custom-slide">
+        <div class="slide-image-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe src="https://www.youtube.com/embed/-DoX3zRYt7Q?autoplay=1"
+            title="YouTube video"
+            frameborder="0"
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+          </iframe>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 39 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="door  video" onclick="openCustomCarousel(39)">
+    <img src="https://img.youtube.com/vi/PHOnGd4bRtw/maxresdefault.jpg" alt="VIDEO: Condo Door Resurface" class="work-image video-thumb">
+    <div class="image-play-overlay">
+      <div class="play-button">&#9658;</div>
+    </div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal39" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(39)">&times;</span>
+      <!-- Slide 2 (YouTube Video) -->
+      <div class="custom-slide">
+        <div class="slide-image-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe src="https://www.youtube.com/embed/PHOnGd4bRtw?autoplay=1"
+            title="YouTube video"
+            frameborder="0"
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+          </iframe>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 40 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="desk coutertops cabinets video" onclick="openCustomCarousel(40)">
+    <img src="https://img.youtube.com/vi/x611npE7SQ4/maxresdefault.jpg" alt="VIDEO: Washroom Resurface Before and After" class="work-image video-thumb">
+    <div class="image-play-overlay">
+      <div class="play-button">&#9658;</div>
+    </div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal40" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(40)">&times;</span>
+      <!-- Slide 2 (YouTube Video) -->
+      <div class="custom-slide">
+        <div class="slide-image-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe src="https://www.youtube.com/embed/x611npE7SQ4?autoplay=1"
+            title="YouTube video"
+            frameborder="0"
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+          </iframe>
+   
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 41 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="glass video" onclick="openCustomCarousel(41)">
+    <img src="https://img.youtube.com/vi/q6qhrtA3auU/maxresdefault.jpg" alt="cab_chr_1.jpg" class="work-image video-thumb">              
+    <div class="image-play-overlay">
+      <div class="play-button">&#9658;</div>
+    </div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal41" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(41)">&times;</span>
+      <!-- Slide 2 (YouTube Video) -->
+      <div class="custom-slide">
+        <div class="slide-image-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe src="https://www.youtube.com/embed/q6qhrtA3auU?autoplay=1"
+            title="YouTube video"
+            frameborder="0"
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+          </iframe>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- Project 41 -->
+<div class="project-wrapper">
+  <div class="work-item" data-tags="desk  countertops video" onclick="openCustomCarousel(41)">
+    <img src="https://img.youtube.com/vi/z6mB-Wz09gM/maxresdefault.jpg" alt="VIDEO: Washroom Resurface" class="work-image video-thumb">
+    <div class="image-play-overlay">
+      <div class="play-button">&#9658;</div>
+    </div>
+  </div>
+  <!-- Modal Templates -->
+  <div id="customCarouselModal41" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="closeCustomCarousel(41)">&times;</span>
+      <!-- Slide 2 (YouTube Video) -->
+      <div class="custom-slide">
+        <div class="slide-image-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe src="https://www.youtube.com/embed/z6mB-Wz09gM?autoplay=1"
+            title="YouTube video"
+            frameborder="0"
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+          </iframe>
+        </div>
+      </div>
+      <button class="custom-prev">&#10094;</button>
+      <button class="custom-next">&#10095;</button>
+    </div>
+  </div>
+</div>
+<!-- View All Button -->
+
+           </div>
+           <!-- View All Button -->
+           <div class="view-all container">
+              <a href="#view-all">
+              LOAD MORE <span class="arrow-down">↓</span>
+              </a>
+           </div>
+        </div>
+     </div>
       </section>
       
 
 
-  </body>
-  <footer  class="footer-container ">
-    <section class="footer-container-2">
-      <div class="margin-bottom row">
-        <div class="col m6  s12">
-          <div class="row">
-            <div class="col 6">
-              <img class="footer-logo" src="static/img/Logo-Houseofwrap.png" alt="">
-            </div>
-            <div class="col 6">
-                <h1 class="h1-footer-text">The <br>House <br>of Wrap</h1>
-            </div>
-          </div>
-        </div>
-        <div class="footer-sections ooter-sections-2 col m2 s6"> <p class="h1-footer-sub">Services</p> <a href="commercial-services.html"><p class="p-footer-sub">Door & Door Surrounds</p></a> <a href="commercial-services.html"><p class="p-margin-top p-footer-sub">Tables & Desks</p></a> <a href="commercial-services.html"><p class="p-margin-top p-footer-sub">Elevators & Panels</p></a> <a href="residential-services.html"><p class="p-margin-top p-footer-sub">More</p></a> </div>
-        <div class="footer-sections col m2 s6">
-          <p class="h1-footer-sub">Other</p>
-          <a href="faq.html"><p class="p-footer-sub">FAQ</p></a>
-          <a href="about.html"><p class="p-margin-top p-footer-sub">About Us</p></a>
-          <a target="_blank" href="swatches.html"><p class="p-margin-top p-footer-sub">Swatches</p></a>
-          <a target="_blank" href="videos.html"><p class="p-margin-top p-footer-sub">Videos</p></a>
 
-        </div>
-        <div class="footer-sections col m2 s6">
-          <p class="h1-footer-sub">Contact</p>
-          <a target="_blank" href="mailto:contact@houseofwrap.com"><p class="p-footer-sub">contact@HouseofWrap.com</p></a>
-          <!--<a target="_blank"  href="https://www.facebook.com/houseofwrapcanada/"><p class="p-margin-top p-footer-sub">Facebook</p></a>-->
-          <a target="_blank"  href="https://www.instagram.com/houseofwrapcanada/"><p class="p-margin-top p-footer-sub">Instagram</p></a>
-          <a target="_blank"  href="tel:647-951-9484"><p class="p-margin-top p-footer-sub">(905) 407-9484</p></a>
-        </div>
-      </div>
-
-      <div class="row">
-  <p class="footer-copywrite-text">
-    © <span id="currentYear"></span> House of Wrap Limited.
-  </p>
+  <!------------------ Patterns -------------->
+  <div class="custom-carousel-container custom-carousel-container-2">
+   <div class="custom-carousel-track custom-carousel-track-samples custom-carousel-track-2 regular-carousel">
+      <div class="custom-carousel-item"><img src="../images/patterns/BQNS820.jpg" alt="Pattern BQNS820"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQRF001.jpg" alt="Pattern BQRF001"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQAPZ05.jpg" alt="Pattern BQAPZ05"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQPNC47.jpg" alt="Pattern BQPNC47"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQPNT09.jpg" alt="Pattern BQPNT09"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQZX120.jpg" alt="Pattern BQZX120"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQUMI08.jpg" alt="Pattern BQUMI08"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQSMT01.jpg" alt="Pattern BQSMT01"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQPNC45.jpg" alt="Pattern BQPNC45"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQPNT06.jpg" alt="Pattern BQPNT06"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQZX116.jpg" alt="Pattern BQZX116"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQZ137.jpg" alt="Pattern BQZ137"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQAPZ25.jpg" alt="Pattern BQAPZ25"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQNS601.jpg" alt="Pattern BQNS601"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQUMI01.jpg" alt="Pattern BQUMI01"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQRM051.jpg" alt="Pattern BQRM051"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQLW104.jpg" alt="Pattern BQLW104"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQRF008.jpg" alt="Pattern BQRF008"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQPNC45.jpg" alt="Pattern BQPNC45"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQPNT08.jpg" alt="Pattern BQPNT08"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQRM011.jpg" alt="Pattern BQRM011"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQNS814.jpg" alt="Pattern BQNS814"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQSMT11.jpg" alt="Pattern BQSMT11"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQNS118.jpg" alt="Pattern BQNS118"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQPM003.jpg" alt="Pattern BQPM003"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQNS804.jpg" alt="Pattern BQNS804"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQSPW54.jpg" alt="Pattern BQSPW54"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQNS708.jpg" alt="Pattern BQNS708"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQSPW29.jpg" alt="Pattern BQSPW29"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQSMT23.png" alt="Pattern BQSMT23"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQLW102.jpg" alt="Pattern BQLW102"></div>
+      <div class="custom-carousel-item"><img src="../images/patterns/BQSMT18.png" alt="Pattern BQSMT18"></div>
+   </div>
 </div>
-
 <script>
-  // Dynamically update the year
-  document.getElementById("currentYear").textContent = new Date().getFullYear();
-</script>
-    </section>
-
-  </footer>
-<script
-  src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
-
-<script >
-$(document).ready(function(){
-$('.sidenav').sidenav();
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.collapsible');
-    var instances = M.Collapsible.init(elems, options);
-  });
-
-  // Or with jQuery
-
-  $(document).ready(function(){
-   $('ul.tabs').tabs();
- });
- $(document).ready(function(){
-   $('.collapsible').collapsible({
-     accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+     anchor.addEventListener('click', function (e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({
+         behavior: 'smooth'
+        });
+      }
+     });
    });
- });
-
-  $(document).ready(function() {
-    $('input#input_text, textarea#textarea2').characterCounter();
-  });
-
+    
 </script>
-
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("user_e3NMbbtzMXVvmhAFIQb3N");
-   })();
-   $(function () {
-	var filterList = {
-		init: function () {
-			// MixItUp plugin
-			// http://mixitup.io
-			$('.portfolio-grid').mixItUp({
-				selectors: {
-  			  target: '.portfolio',
-  			  filter: '.filter'	
-  		  },
-  		  load: {
-    		  filter: 'all' // show app tab on first load
-    		}     
-			});								
-		}
-	};
-	// Run the show!
-	filterList.init();
-});
-// New
-$(document).ready(function(){
-$('.sidenav').sidenav();
-});
-</script>
-<script src='https://code.jquery.com/jquery-3.3.1.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js'></script>
+</body>
+<!------------------ Footer -------------->
+<footer style="padding-top:0px; margin-top:0px;" class="footer-container ">
+<section class="footer-container-2">
+   <div class="margin-bottom row">
+      <div class="col m6  s12">
+         <div class="row">
+            <div class="col 6">
+               <img class="footer-logo" src="../static/img/Logo-Houseofwrap.png" alt="">
+            </div>
+            <div class="col 6">
+               <h1 class="h1-footer-text">The <br>House <br>of Wrap</h1>
+            </div>
+         </div>
+      </div>
+      <div class="footer-sections ooter-sections-2 col m2 s6">
+         <p class="h1-footer-sub">Services</p>
+         <a href="services/doors.html">
+            <p class="p-footer-sub">Door & Surrounds</p>
+         </a>
+         <a href="services/wallsandpanels.html">
+            <p class="p-margin-top p-footer-sub">Wall & Panels</p>
+         </a>
+         <a href="services/millwork.html">
+            <p class="p-margin-top p-footer-sub">Millwork</p>
+         </a>
+         <a href="services/other.html">
+            <p class="p-margin-top p-footer-sub">More</p>
+         </a>
+      </div>
+      <div class="footer-sections col m2 s6">
+         <p class="h1-footer-sub">Other</p>
+         <a href="faq.html">
+            <p class="p-footer-sub">FAQ</p>
+         </a>
+         <a href="about.html">
+            <p class="p-margin-top p-footer-sub">About Us</p>
+         </a>
+         <a target="_blank" href="swatches.html">
+            <p class="p-margin-top p-footer-sub">Patterns</p>
+         </a>
+         <a target="_blank" href="videos.html">
+            <p class="p-margin-top p-footer-sub">Portfolio</p>
+         </a>
+      </div>
+      <div class="footer-sections col m2 s6">
+         <p class="h1-footer-sub">Contact</p>
+         <a target="_blank" href="mailto:contact@houseofwrap.com">
+            <p class="p-footer-sub">contact@HouseofWrap.com</p>
+         </a>
+         <!--<a target="_blank"  href="https://www.facebook.com/houseofwrapcanada/"><p class="p-margin-top p-footer-sub">Facebook</p></a>-->
+         <a target="_blank"  href="https://www.instagram.com/houseofwrapcanada/">
+            <p class="p-margin-top p-footer-sub">Instagram</p>
+         </a>
+         <a target="_blank"  href="tel:647-951-9484">
+            <p href="tel:+9054079484" class="p-margin-top p-footer-sub">(905) 407-9484</p>
+         </a>
+      </div>
+   </div>
+</section>
+<section >
+   <div class="row container">
+      <!-- your logo + footer sections go here -->
+   </div>
+   <!-- align this bar with the top content -->
+   <div class="container" style="margin-bottom: 0 !important; padding-bottom:0 !important;">
+      <div class="footer-bar" style="margin-bottom: 0 !important; padding-bottom:0 !important;">
+         <p class="footer-copywrite-text2">
+            © <span id="currentYear"></span> House of Wrap Limited.
+         </p>
+         <img class="footer-logo2" src="../images/new_images/misc/1x/3m_logo_black.png" alt="3M Logo">
+      </div>
+   </div>
+ 
+   <script>
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
+   </script>
+</section>
+</footer>   <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script
+   src="https://code.jquery.com/jquery-3.5.1.js"
+   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+   crossorigin="anonymous"></script>
 <script type="text/javascript" src="./materialize/js/materialize.min.js"></script>
+
+     <!-- Contact form-->
 <script type="text/javascript" src=".//materialize/js/materialize.js"></script>
-<script type="text/javascript" src="./materialize/js/materialize.min.js"></script>
-<script type="text/javascript" src=".//materialize/js/materialize.js"></script>
+<!-- Contact form-->
 <script>
-document.getElementById("year").innerHTML = new Date().getFullYear();
+   const dt = new DataTransfer();
+   const fileInput = document.getElementById("fileUpload");
+   const fileList = document.getElementById("fileList");
+   const fileCount = document.getElementById("fileCount");
+   const fileError = document.getElementById("fileUploadError");
+   const form = document.querySelector("form"); // adjust if needed
+ 
+   fileInput.addEventListener("change", function () {
+     for (const file of fileInput.files) {
+       if (!Array.from(dt.files).some(f => f.name === file.name && f.size === file.size)) {
+         dt.items.add(file);
+       }
+     }
+ 
+     fileInput.files = dt.files;
+     updateFileDisplay();
+   });
+ 
+   function updateFileDisplay() {
+     fileList.innerHTML = "";
+ 
+     if (dt.files.length === 0) {
+       fileCount.textContent = "No files chosen";
+       return;
+     }
+ 
+     fileCount.textContent = `${dt.files.length} file(s) selected`;
+     fileError.style.display = "none";
+ 
+     Array.from(dt.files).forEach((file, index) => {
+       const fileTag = document.createElement("div");
+       fileTag.className = "file-tag";
+ 
+       const fileName = document.createElement("span");
+       fileName.textContent = file.name;
+ 
+       const removeBtn = document.createElement("span");
+       removeBtn.textContent = "×";
+       removeBtn.className = "remove-btn";
+       removeBtn.onclick = () => {
+         dt.items.remove(index);
+         fileInput.files = dt.files;
+         updateFileDisplay();
+       };
+ 
+       fileTag.appendChild(fileName);
+       fileTag.appendChild(removeBtn);
+       fileList.appendChild(fileTag);
+     });
+   }
+ 
+   // Form submission file injection (for Formspree-style setups)
+   form.addEventListener("submit", function (e) {
+     document.querySelectorAll(".cloned-upload").forEach(el => el.remove());
+ 
+     Array.from(dt.files).forEach(file => {
+       const clonedInput = document.createElement("input");
+       clonedInput.type = "file";
+       clonedInput.name = "attachment"; // adjust if needed
+       clonedInput.className = "cloned-upload";
+       clonedInput.style.display = "none";
+ 
+       const dt2 = new DataTransfer();
+       dt2.items.add(file);
+       clonedInput.files = dt2.files;
+ 
+       form.appendChild(clonedInput);
+     });
+   });
+ </script>
+  <!-- Contact form-->
+  <!-- Youtube video form-->
+<script>
+   function playVideo() {
+     document.getElementById("video-cover").style.display = "none";
+     document.getElementById("youtube-video").style.display = "block";
+   }
 </script>
+<script >
+   $(document).ready(function(){
+   $('.sidenav').sidenav();
+   });
+   
+   document.addEventListener('DOMContentLoaded', function() {
+       var elems = document.querySelectorAll('.collapsible');
+       var instances = M.Collapsible.init(elems, options);
+     });
+   
+     // Or with jQuery
+   
+     $(document).ready(function(){
+      $('ul.tabs').tabs();
+    });
+    $(document).ready(function(){
+      $('.collapsible').collapsible({
+        accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+      });
+    });
+   
+     $(document).ready(function() {
+       $('input#input_text, textarea#textarea2').characterCounter();
+     });
+     var a = 0;
+   $(window).scroll(function() {
+   
+     var oTop = $('#counter').offset().top - window.innerHeight;
+     if (a == 0 && $(window).scrollTop() > oTop) {
+       $('.counter-value').each(function() {
+         var $this = $(this),
+           countTo = $this.attr('data-count');
+         $({
+           countNum: $this.text()
+         }).animate({
+             countNum: countTo
+           },
+   
+           {
+   
+             duration: 2000,
+             easing: 'swing',
+             step: function() {
+               $this.text(Math.floor(this.countNum));
+             },
+             complete: function() {
+               $this.text(this.countNum);
+               //alert('finished');
+             }
+   
+           });
+       });
+       a = 1;
+     }
+   
+   });
+</script>
+<script>
+// Property Type Dropdown
+function selectOption(value) {
+ document.getElementById("dropdownInput").value = value;
+ document.getElementById("dropdownOptions").style.display = "none";
+}
 
+document.getElementById("dropdownInput").addEventListener("click", function () {
+ const options = document.getElementById("dropdownOptions");
+ options.style.display = options.style.display === "block" ? "none" : "block";
+});
+
+// How Did You Hear Dropdown
+function selectOption2(value) {
+ document.getElementById("dropdownInput2").value = value;
+ document.getElementById("dropdownOptions2").style.display = "none";
+}
+
+document.getElementById("dropdownInput2").addEventListener("click", function () {
+ const options = document.getElementById("dropdownOptions2");
+ options.style.display = options.style.display === "block" ? "none" : "block";
+});
+
+// Close any dropdowns when clicking outside
+document.addEventListener("click", function (event) {
+ if (!event.target.closest(".input-field2")) {
+   const dropdown1 = document.getElementById("dropdownOptions");
+   const dropdown2 = document.getElementById("dropdownOptions2");
+   if (dropdown1) dropdown1.style.display = "none";
+   if (dropdown2) dropdown2.style.display = "none";
+ }
+});
+</script>
+     <!-- Carosuel-->
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+   var dropdownInput = document.getElementById("dropdownInput");
+   var dropdownOptions = document.getElementById("dropdownOptions");
+   
+   dropdownInput.addEventListener("click", function (event) {
+     dropdownOptions.style.display = "block";
+     dropdownOptions.style.zIndex = "9999"; // Ensure dropdown stays above everything
+     event.stopPropagation(); // Prevents closing when clicking inside
+   });
+   
+   dropdownOptions.querySelectorAll("div").forEach(function (option) {
+     option.addEventListener("click", function () {
+       dropdownInput.value = this.textContent;
+       dropdownInput.style.color = "black"; // Change text color when selected
+       dropdownOptions.style.display = "none";
+     });
+   });
+   
+   document.addEventListener("click", function (event) {
+     if (!dropdownInput.contains(event.target) && !dropdownOptions.contains(event.target)) {
+       dropdownOptions.style.display = "none";
+     }
+   });
+   });
+   
+   let currentSlideIndex = 0;
+   let activeSlides = [];
+   
+   function openCustomCarousel(id) {
+     const modal = document.getElementById(`customCarouselModal${id}`);
+     if (!modal) return;
+   
+     activeSlides = modal.querySelectorAll(".custom-slide");
+     currentSlideIndex = 0;
+     showSlide(currentSlideIndex);
+     modal.style.display = "flex";
+     document.body.style.overflow = "hidden";
+   
+     modal.querySelector(".custom-prev").onclick = () => changeSlide(-1);
+     modal.querySelector(".custom-next").onclick = () => changeSlide(1);
+     modal.querySelector(".custom-close").onclick = () => closeCustomCarousel(id);
+   
+     modal.onclick = (e) => {
+       if (e.target === modal) closeCustomCarousel(id);
+     };
+   }
+   
+   function closeCustomCarousel(id) {
+     const modal = document.getElementById(`customCarouselModal${id}`);
+     modal.style.display = "none";
+     document.body.style.overflow = "auto";
+   }
+   
+   function changeSlide(n) {
+     currentSlideIndex += n;
+     if (currentSlideIndex >= activeSlides.length) currentSlideIndex = 0;
+     if (currentSlideIndex < 0) currentSlideIndex = activeSlides.length - 1;
+     showSlide(currentSlideIndex);
+   }
+   
+   function showSlide(n) {
+     activeSlides.forEach(slide => (slide.style.display = "none"));
+     activeSlides[n].style.display = "block";
+   }
+   
+   document.addEventListener("DOMContentLoaded", function () {
+   const track = document.querySelector(".custom-carousel-track");
+   const items = track.innerHTML; // Get original items
+   track.innerHTML += items; // Duplicate them for smooth looping
+   });
+   
+   
+   
+</script>
+     <!-- Project wrapper-->
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+     const tabs = document.querySelectorAll(".tab-link");
+     const wrappers = document.querySelectorAll(".project-wrapper");
+   
+     if (!tabs.length || !wrappers.length) {
+       console.error("Tabs or project wrappers not found.");
+       return;
+     }
+   
+     tabs.forEach(tab => {
+       tab.addEventListener("click", function () {
+         tabs.forEach(t => t.classList.remove("active"));
+         this.classList.add("active");
+   
+         const filter = this.getAttribute("data-filter");
+   
+         wrappers.forEach(wrapper => {
+           const workItem = wrapper.querySelector(".work-item");
+           const tags = workItem?.getAttribute("data-tags")?.split(" ") || [];
+   
+           if (filter === "all" || tags.includes(filter)) {
+             wrapper.style.display = "block";
+           } else {
+             wrapper.style.display = "none";
+           }
+         });
+       });
+     });
+   
+     // Trigger "All" filter by default
+     const defaultTab = document.querySelector(".tab-link[data-filter='all']");
+     if (defaultTab) defaultTab.click();
+   });
+   
+</script>
+     <!-- Portfolio-->
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+     const allProjects = Array.from(document.querySelectorAll(".project-wrapper"));
+     const viewAllBtn = document.querySelector(".view-all");
+     const projectsPerClick = 12;
+     let currentVisible = 0;
+     let activeFilter = "all";
+   
+     function getFilteredProjects() {
+       return allProjects.filter(project => {
+         if (activeFilter === "all") return true;
+         const tags = project.querySelector(".work-item").getAttribute("data-tags");
+         return tags && tags.split(" ").includes(activeFilter);
+       });
+     }
+   
+     function showProjects(reset = false) {
+   const filtered = getFilteredProjects();
+   
+   if (reset) {
+     currentVisible = 0;
+     allProjects.forEach(p => p.style.display = "none");
+   }
+   
+   const nextVisible = currentVisible + projectsPerClick;
+   
+   for (let i = currentVisible; i < nextVisible && i < filtered.length; i++) {
+     filtered[i].style.display = "block";
+   }
+   
+   currentVisible = nextVisible;
+   
+   // Force-check against filtered length (not total)
+   if (currentVisible >= filtered.length) {
+     viewAllBtn.style.display = "none";
+   } else {
+     viewAllBtn.style.display = "block";
+   }
+   }
+   
+     // On initial load
+     showProjects(true);
+   
+     // When clicking "LOAD MORE"
+     viewAllBtn.addEventListener("click", function (e) {
+       e.preventDefault();
+       showProjects();
+     });
+   
+     // When clicking a filter
+     document.querySelectorAll(".tab-link").forEach(tab => {
+       tab.addEventListener("click", function () {
+         document.querySelectorAll(".tab-link").forEach(t => t.classList.remove("active"));
+         this.classList.add("active");
+         activeFilter = this.getAttribute("data-filter");
+         showProjects(true);
+       });
+     });
+   });
+</script>
+     <!-- Dropdown-->
+     <script>
+       document.addEventListener("DOMContentLoaded", function () {
+         const dropdownTriggers = document.querySelectorAll(".dropdown-toggle");
+     
+         dropdownTriggers.forEach(trigger => {
+           trigger.addEventListener("click", function (e) {
+             e.preventDefault();
+             const group = this.getAttribute("data-group");
+     
+             // Close all dropdown groups first
+             const allGroups = new Set(
+               Array.from(dropdownTriggers).map(t => t.getAttribute("data-group"))
+             );
+     
+             allGroups.forEach(g => {
+               if (g !== group) {
+                 document.querySelectorAll(`.${g}`).forEach(item => item.classList.add("hidden"));
+               }
+             });
+     
+             // Toggle current dropdown group
+             document.querySelectorAll(`.${group}`).forEach(item => item.classList.toggle("hidden"));
+           });
+         });
+     
+         // Initialize sidenav (Materialize)
+         const elems = document.querySelectorAll(".sidenav");
+         M.Sidenav.init(elems);
+       });
+     </script>
+
+<script>
+   document.querySelectorAll('.tab-item-unique').forEach(tab => {
+     tab.addEventListener('click', function () {
+     document.querySelectorAll('.tab-item-unique').forEach(t => t.classList.remove('active-tab-unique'));
+     this.classList.add('active-tab-unique');
+     });
+   });
+    
+</script>
+     <!-- Error Contact form-->
+     <script>
+      document.getElementById("fileUpload").addEventListener("change", function () {
+        const uploadPrompt = document.getElementById("uploadPrompt");
+        const fileError = document.getElementById("fileUploadError");
+    
+        if (this.files.length > 0) {
+          uploadPrompt.style.display = "none";
+          fileError.style.display = "none"; // Hide error immediately
+        } else {
+          uploadPrompt.style.display = "inline";
+        }
+      });
+    
+      function validateForm(event) {
+        const fileInput = document.getElementById("fileUpload");
+        const fileError = document.getElementById("fileUploadError");
+    
+        if (fileInput.files.length === 0) {
+          fileError.style.display = "inline";
+          event.preventDefault(); // stop form from submitting
+          return false;
+        } else {
+          fileError.style.display = "none";
+          return true;
+        }
+      }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("formSource").value = window.location.pathname;
+      });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+ const budgetInput = document.getElementById("budgetInput");
+ const dollarSign = document.getElementById("dollarSign");
+
+ budgetInput.addEventListener("input", function () {
+   // Remove all non-digit characters
+   let rawValue = this.value.replace(/[^0-9]/g, '');
+
+   if (rawValue.length > 0) {
+     dollarSign.style.display = "inline";
+     // Format number with commas
+     this.value = Number(rawValue).toLocaleString('en-US');
+   } else {
+     dollarSign.style.display = "none";
+     this.value = '';
+   }
+ });
+});
+    </script>
+    <script>
+     document.addEventListener("DOMContentLoaded", function () {
+       const phoneInput = document.querySelector('input[name="contact_number"]');
+       
+       phoneInput.addEventListener("input", function () {
+         this.value = this.value.replace(/[^0-9]/g, ""); // Remove all non-numeric characters
+       });
+     });
+   </script>
 </html>
