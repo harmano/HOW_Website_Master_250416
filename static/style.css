@@ -5028,6 +5028,9 @@ font-weight: 600;
   letter-spacing: 2.5px !important;
 }
 
+.slide-label-top-before{
+  background-color: black !important;
+}
 .slide-label-bottom {
   bottom: 0px;
   background-color: rgba(0, 0, 0, 0.847);
@@ -5784,7 +5787,7 @@ html, body {
     position: absolute;
     top: 12px;
     left: 12px;
-    background: #00aaff;
+
     color: white;
     padding: 6px 12px;
     font-size: 13px;
