@@ -2364,12 +2364,15 @@
                        <div class="col s1"></div>
                        <div class="input-field2 col s5" style="position: relative;">
                         <input 
-                          type="text" 
+                          type="tel"
+                          inputmode="numeric"
+                          pattern="[0-9]*"
                           placeholder="Budget" 
                           name="Budget" 
                           id="budgetInput" 
                           required 
                           style="padding-left: 40px;"> <!-- make space for $ -->
+                      
                         <span 
                           id="dollarSign" 
                           style="
@@ -2381,7 +2384,6 @@
                             font-size: 1rem;">
                           $
                         </span>
-                        
                       </div>
                      </div>
                      <div class="row">
@@ -3070,22 +3072,24 @@
          });
        </script>
        <script>
-         const budgetInput = document.getElementById("budgetInput");
-         const dollarSign = document.getElementById("dollarSign");
-       
-         budgetInput.addEventListener("input", function () {
-           // Remove all non-digit characters
-           let rawValue = this.value.replace(/[^0-9]/g, '');
-       
-           if (rawValue.length > 0) {
-             dollarSign.style.display = "inline";
-             // Format number with commas
-             this.value = Number(rawValue).toLocaleString('en-US');
-           } else {
-             dollarSign.style.display = "none";
-             this.value = '';
-           }
-         });
+           document.addEventListener("DOMContentLoaded", function () {
+    const budgetInput = document.getElementById("budgetInput");
+    const dollarSign = document.getElementById("dollarSign");
+
+    budgetInput.addEventListener("input", function () {
+      // Remove all non-digit characters
+      let rawValue = this.value.replace(/[^0-9]/g, '');
+
+      if (rawValue.length > 0) {
+        dollarSign.style.display = "inline";
+        // Format number with commas
+        this.value = Number(rawValue).toLocaleString('en-US');
+      } else {
+        dollarSign.style.display = "none";
+        this.value = '';
+      }
+    });
+  });
        </script>
        <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -3096,4 +3100,5 @@
           });
         });
       </script>
+
 </html>
