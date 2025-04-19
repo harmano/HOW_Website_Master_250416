@@ -139,8 +139,15 @@
 
   <div class="row">
     <div class="input-field2 col s5">
-      <input placeholder="Phone" type="text" name="contact_number" required>
-    </div>
+      <input
+placeholder="Phone"
+type="tel"
+name="contact_number"
+inputmode="numeric"
+pattern="[0-9]*"
+required
+>
+     </div>
     <div class="col s1"></div>
     <div class="input-field2 col s5">
       <input placeholder="Location" type="text" name="Location" required>
@@ -183,7 +190,29 @@
       </span>
     </div>
   </div>
-
+  <div class="row">
+    <div class="input-field2 col s11">
+      <input 
+        placeholder="How did you hear about us " 
+        type="text" 
+        name="how_heard" 
+        id="dropdownInput2" 
+        readonly 
+         
+        onclick="toggleDropdown('dropdownOptions2')"
+      >
+      <div id="dropdownOptions2" class="dropdown-options">
+        <div onclick="selectOption2('Facebook')">Facebook</div>
+        <div onclick="selectOption2('Instagram')">Instagram</div>
+        <div onclick="selectOption2('Google')">Google</div>
+        <div onclick="selectOption2('Other Search Engine')">Other Search Engine</div>
+        <div onclick="selectOption2('3M')">3M</div>
+        <div onclick="selectOption2('Referral')">Referral</div>
+        <div onclick="selectOption2('Ad')">Ad</div>
+        <div onclick="selectOption2('Other')">Other</div>
+      </div>
+    </div>
+  </div>
   <div class="row">
     <div class="center input-field2 col s11">
       <textarea name="message" class="materialize-textarea" placeholder="Tell us about your project..." required></textarea>
@@ -298,70 +327,118 @@
         </section>
      </div>
   </body>
-  <footer  class="footer-container ">
+  <!------------------ Footer -------------->
+  <footer style="padding-top:0px;" class="footer-container ">
     <section class="footer-container-2">
-      <div class="margin-bottom row">
-        <div class="col m6  s12">
-          <div class="row">
-            <div class="col 6">
-              <img class="footer-logo" src="static/img/Logo-Houseofwrap.png" alt="">
-            </div>
-            <div class="col 6">
-                <h1 class="h1-footer-text">The <br>House <br>of Wrap</h1>
-            </div>
+       <div class="margin-bottom row">
+          <div class="col m6  s12">
+             <div class="row">
+                <div class="col 6">
+                   <img class="footer-logo" src="../static/img/Logo-Houseofwrap.png" alt="">
+                </div>
+                <div class="col 6">
+                   <h1 class="h1-footer-text">The <br>House <br>of Wrap</h1>
+                </div>
+             </div>
           </div>
-        </div>
-        <div class="footer-sections ooter-sections-2 col m2 s6"> <p class="h1-footer-sub">Services</p> <a href="commercial-services.html"><p class="p-footer-sub">Door & Door Surrounds</p></a> <a href="commercial-services.html"><p class="p-margin-top p-footer-sub">Tables & Desks</p></a> <a href="commercial-services.html"><p class="p-margin-top p-footer-sub">Elevators & Panels</p></a> <a href="residential-services.html"><p class="p-margin-top p-footer-sub">More</p></a> </div>
-        <div class="footer-sections col m2 s6">
-          <p class="h1-footer-sub">Other</p>
-          <a href="faq.html"><p class="p-footer-sub">FAQ</p></a>
-          <a href="about.html"><p class="p-margin-top p-footer-sub">About Us</p></a>
-          <a target="_blank" href="swatches.html"><p class="p-margin-top p-footer-sub">Swatches</p></a>
-          <a target="_blank" href="videos.html"><p class="p-margin-top p-footer-sub">Videos</p></a>
-
-        </div>
-        <div class="footer-sections col m2 s6">
-          <p class="h1-footer-sub">Contact</p>
-          <a target="_blank" href="mailto:contact@houseofwrap.com"><p class="p-footer-sub">contact@HouseofWrap.com</p></a>
-          <!--<a target="_blank"  href="https://www.facebook.com/houseofwrapcanada/"><p class="p-margin-top p-footer-sub">Facebook</p></a>-->
-          <a target="_blank"  href="https://www.instagram.com/houseofwrapcanada/"><p class="p-margin-top p-footer-sub">Instagram</p></a>
-          <a target="_blank"  href="tel:647-951-9484"><p class="p-margin-top p-footer-sub">(905) 407-9484</p></a>
-        </div>
-      </div>
-
-      <div class="row">
-  <p class="footer-copywrite-text">
-    © <span id="currentYear"></span> House of Wrap Limited.
-  </p>
-</div>
-
-<script>
-  // Dynamically update the year
-  document.getElementById("currentYear").textContent = new Date().getFullYear();
-</script>
+          <div class="footer-sections ooter-sections-2 col m2 s6">
+             <p class="h1-footer-sub">Services</p>
+             <a href="services/doors.html">
+                <p class="p-footer-sub">Door & Surrounds</p>
+             </a>
+             <a href="services/wallsandpanels.html">
+                <p class="p-margin-top p-footer-sub">Wall & Panels</p>
+             </a>
+             <a href="services/millwork.html">
+                <p class="p-margin-top p-footer-sub">Millwork</p>
+             </a>
+             <a href="services/other.html">
+                <p class="p-margin-top p-footer-sub">More</p>
+             </a>
+          </div>
+          <div class="footer-sections col m2 s6">
+             <p class="h1-footer-sub">Other</p>
+             <a href="faq.html">
+                <p class="p-footer-sub">FAQ</p>
+             </a>
+             <a href="about.html">
+                <p class="p-margin-top p-footer-sub">About Us</p>
+             </a>
+             <a target="_blank" href="swatches.html">
+                <p class="p-margin-top p-footer-sub">Patterns</p>
+             </a>
+             <a target="_blank" href="videos.html">
+                <p class="p-margin-top p-footer-sub">Portfolio</p>
+             </a>
+          </div>
+          <div class="footer-sections col m2 s6">
+             <p class="h1-footer-sub">Contact</p>
+             <a target="_blank" href="mailto:contact@houseofwrap.com">
+                <p class="p-footer-sub">contact@HouseofWrap.com</p>
+             </a>
+             <!--<a target="_blank"  href="https://www.facebook.com/houseofwrapcanada/"><p class="p-margin-top p-footer-sub">Facebook</p></a>-->
+             <a target="_blank"  href="https://www.instagram.com/houseofwrapcanada/">
+                <p class="p-margin-top p-footer-sub">Instagram</p>
+             </a>
+             <a target="_blank"  href="tel:647-951-9484">
+                <p href="tel:+9054079484" class="p-margin-top p-footer-sub">(905) 407-9484</p>
+             </a>
+          </div>
+       </div>
     </section>
+    <section >
+       <div class="row container">
+          <!-- your logo + footer sections go here -->
+       </div>
+       <!-- align this bar with the top content -->
+       <div class="container" style="margin-bottom: 0 !important; padding-bottom:0 !important;">
+          <div class="footer-bar" style="margin-bottom: 0 !important; padding-bottom:0 !important;">
+             <p class="footer-copywrite-text2">
+                © <span id="currentYear"></span> House of Wrap Limited.
+             </p>
+             <img class="footer-logo2" src="../images/new_images/misc/1x/3m_logo_black.png" alt="3M Logo">
+          </div>
+       </div>
+   
+       <script>
+          document.getElementById("currentYear").textContent = new Date().getFullYear();
+       </script>
+    </section>
+ </footer>
 
-  </footer>
+ <script>
+  // Property Type Dropdown
+  function selectOption(value) {
+    document.getElementById("dropdownInput").value = value;
+    document.getElementById("dropdownOptions").style.display = "none";
+  }
 
-  <script>
-    function selectOption(value) {
-      document.getElementById("dropdownInput").value = value;
-      document.getElementById("dropdownOptions").style.display = "none";
+  document.getElementById("dropdownInput").addEventListener("click", function () {
+    const options = document.getElementById("dropdownOptions");
+    options.style.display = options.style.display === "block" ? "none" : "block";
+  });
+
+  // How Did You Hear Dropdown
+  function selectOption2(value) {
+    document.getElementById("dropdownInput2").value = value;
+    document.getElementById("dropdownOptions2").style.display = "none";
+  }
+
+  document.getElementById("dropdownInput2").addEventListener("click", function () {
+    const options = document.getElementById("dropdownOptions2");
+    options.style.display = options.style.display === "block" ? "none" : "block";
+  });
+
+  // Close any dropdowns when clicking outside
+  document.addEventListener("click", function (event) {
+    if (!event.target.closest(".input-field2")) {
+      const dropdown1 = document.getElementById("dropdownOptions");
+      const dropdown2 = document.getElementById("dropdownOptions2");
+      if (dropdown1) dropdown1.style.display = "none";
+      if (dropdown2) dropdown2.style.display = "none";
     }
-  
-    document.getElementById("dropdownInput").addEventListener("click", function () {
-      const options = document.getElementById("dropdownOptions");
-      options.style.display = options.style.display === "block" ? "none" : "block";
-    });
-  
-    document.addEventListener("click", function (event) {
-      if (!event.target.closest(".input-field2")) {
-        document.getElementById("dropdownOptions").style.display = "none";
-      }
-    });
-  
-
-  </script>
+  });
+</script>
    <!-- Contact form-->
    <script>
     const dt = new DataTransfer();
@@ -525,6 +602,15 @@ document.addEventListener('DOMContentLoaded', function() {
       dollarSign.style.display = "none";
       this.value = '';
     }
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const phoneInput = document.querySelector('input[name="contact_number"]');
+    
+    phoneInput.addEventListener("input", function () {
+      this.value = this.value.replace(/[^0-9]/g, ""); // Remove all non-numeric characters
+    });
   });
 </script>
 </html>
