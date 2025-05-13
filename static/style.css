@@ -1461,7 +1461,14 @@ text-align: center;
 }
 
 
-
+time {
+  display: block;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 8px;
+  }
 
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1536,14 +1543,7 @@ background-color: #28ace2;
 border-color: transparent transparent transparent #28ace2;
 }
 
-time {
-display: block;
-font-size: 16px;
-font-family: 'Roboto', sans-serif;
-font-weight: 500;
-color: black;
-margin-bottom: 8px;
-}
+
 
 
 /* EFFECTS
@@ -1576,6 +1576,7 @@ transform: none;
 visibility: visible;
 opacity: 1;
 }
+
 
 
 /* GENERAL MEDIA QUERIES
