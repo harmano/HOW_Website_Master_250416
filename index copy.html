@@ -741,7 +741,7 @@
           <a target="_blank" href="mailto:contact@houseofwrap.com"><p class="p-footer-sub">contact@HouseofWrap.com</p></a>
           <!--<a target="_blank"  href="https://www.facebook.com/houseofwrapcanada/"><p class="p-margin-top p-footer-sub">Facebook</p></a>-->
           <a target="_blank"  href="https://www.instagram.com/houseofwrapcanada/"><p class="p-margin-top p-footer-sub">Instagram</p></a>
-          <a target="_blank"  href="tel:647-951-9484"><p class="p-margin-top p-footer-sub">(905) 407-9484</p></a>
+          <a target="_blank"  href="tel:905-407-9484"><p class="p-margin-top p-footer-sub">(905) 407-9484</p></a>
         </div>
       </div>
 
@@ -767,4 +767,34 @@ $(document).ready(function(){
 $('.sidenav').sidenav();
 });
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdownTriggers = document.querySelectorAll(".dropdown-toggle");
+  
+      dropdownTriggers.forEach(trigger => {
+        trigger.addEventListener("click", function (e) {
+          e.preventDefault();
+          const group = this.getAttribute("data-group");
+  
+          // Close all dropdown groups first
+          const allGroups = new Set(
+            Array.from(dropdownTriggers).map(t => t.getAttribute("data-group"))
+          );
+  
+          allGroups.forEach(g => {
+            if (g !== group) {
+              document.querySelectorAll(`.${g}`).forEach(item => item.classList.add("hidden"));
+            }
+          });
+  
+          // Toggle current dropdown group
+          document.querySelectorAll(`.${group}`).forEach(item => item.classList.toggle("hidden"));
+        });
+      });
+  
+      // Initialize sidenav (Materialize)
+      const elems = document.querySelectorAll(".sidenav");
+      M.Sidenav.init(elems);
+    });
+  </script>
 </html>

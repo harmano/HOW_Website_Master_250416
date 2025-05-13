@@ -229,7 +229,7 @@ body::before {
 
   </div>
 
-    <!-- 
+    <!-- Pop up about how you heard about us
   <div class="how-wrap-overlay" id="how-wrap-overlay">
     <div class="how-wrap-modal">
       <p class="how-wrap-intro">Hi there! Could you please tell us:</p>
@@ -309,4 +309,34 @@ body::before {
     });
   });
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdownTriggers = document.querySelectorAll(".dropdown-toggle");
+  
+      dropdownTriggers.forEach(trigger => {
+        trigger.addEventListener("click", function (e) {
+          e.preventDefault();
+          const group = this.getAttribute("data-group");
+  
+          // Close all dropdown groups first
+          const allGroups = new Set(
+            Array.from(dropdownTriggers).map(t => t.getAttribute("data-group"))
+          );
+  
+          allGroups.forEach(g => {
+            if (g !== group) {
+              document.querySelectorAll(`.${g}`).forEach(item => item.classList.add("hidden"));
+            }
+          });
+  
+          // Toggle current dropdown group
+          document.querySelectorAll(`.${group}`).forEach(item => item.classList.toggle("hidden"));
+        });
+      });
+  
+      // Initialize sidenav (Materialize)
+      const elems = document.querySelectorAll(".sidenav");
+      M.Sidenav.init(elems);
+    });
+  </script>
 </html>

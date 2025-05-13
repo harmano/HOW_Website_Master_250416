@@ -4527,58 +4527,7 @@ margin-top: -30px;
     background: rgba(0, 0, 0, 0.8);
   }
   
-  .custom-blog-links {
-    padding: 0px;
-    border-radius: 8px;
-    text-align: left;
-    max-width: 400px;
-  }
-
-  .blog-heading {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    color: #333;
-  }
-
-  .blog-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .blog-item {
-    display: flex;
-    align-items: center;
-    background: white;
-    padding: 10px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    font-weight: 500;
-    transition: background 0.3s ease;
-    border: 1px solid #ddd;
-  }
-
-  .blog-item:hover {
-    background: #e0e0e0;
-  }
-
-  .blog-thumbnail {
-    width: 50px;
-    height: 50px;
-    border-radius: 6px;
-    object-fit: cover;
-    margin-right: 10px;
-  }
-
-  .blog-text {
-    flex-grow: 1;
-  }
-
-
+ 
 
 /* Custom Carousel */
 .custom-carousel {
@@ -5979,4 +5928,148 @@ html, body {
   margin-top: 10px;
   text-align: center !important;
   font-size: 6vw;
+}
+.houseofwrap-testimonial-container {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.houseofwrap-testimonial-card {
+  background-color: #f9f9f9;
+  border-left: 5px solid #2196f3; /* Blue */
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.houseofwrap-testimonial-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 20px;
+  text-align: left;
+  display: block;
+}
+
+.houseofwrap-testimonial-block {
+  margin: 0;
+}
+
+.houseofwrap-avatar-circle {
+  width: 48px;
+  height: 48px;
+  background-color: #2196f3;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 50%;
+  line-height: 48px;
+  text-align: center;
+  display: inline-block;
+}
+
+.houseofwrap-testimonial-text {
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+  margin: 0;
+}
+
+.houseofwrap-testimonial-author {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #555;
+  margin-top: 18px !important;
+}
+.custom-blog-links {
+  padding: 0;
+  border-radius: 8px;
+  text-align: left;
+  max-width: 100%;
+}
+
+.blog-heading {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 25px !important;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.blog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.blog-item {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  border: 1px solid #ddd;
+  width: calc(33.333% - 12px); /* Three items per row */
+  box-sizing: border-box;
+}
+
+.blog-item:hover {
+  background: #e0e0e0;
+}
+
+.blog-thumbnail {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.blog-text {
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 992px) {
+  .blog-item {
+    width: calc(50% - 12px); /* 2 per row on tablets */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blog-item {
+    width: 100%; /* Stack on mobile */
+  }
+}
+
+.blog-row {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.blog-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.blog-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 90%;
+}
+
+.blog-arrow-icon {
+  flex-shrink: 0;
+  margin-left: 10px;
+  margin-right: 20px;
+  color: #333;
 }

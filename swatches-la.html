@@ -586,4 +586,34 @@
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script><script  src="swatches/script.js"></script>
 
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdownTriggers = document.querySelectorAll(".dropdown-toggle");
+  
+      dropdownTriggers.forEach(trigger => {
+        trigger.addEventListener("click", function (e) {
+          e.preventDefault();
+          const group = this.getAttribute("data-group");
+  
+          // Close all dropdown groups first
+          const allGroups = new Set(
+            Array.from(dropdownTriggers).map(t => t.getAttribute("data-group"))
+          );
+  
+          allGroups.forEach(g => {
+            if (g !== group) {
+              document.querySelectorAll(`.${g}`).forEach(item => item.classList.add("hidden"));
+            }
+          });
+  
+          // Toggle current dropdown group
+          document.querySelectorAll(`.${group}`).forEach(item => item.classList.toggle("hidden"));
+        });
+      });
+  
+      // Initialize sidenav (Materialize)
+      const elems = document.querySelectorAll(".sidenav");
+      M.Sidenav.init(elems);
+    });
+  </script>
 </html>

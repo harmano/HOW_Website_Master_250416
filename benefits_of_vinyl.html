@@ -45,55 +45,89 @@ hr.line-blue{
 }
 
   </style>
-<!--Nav-->
-<nav  class="">
-  <div class="container-2 nav-wrapper">
-    <a href="index.html"><img class="brand-logo hide-on-med-and-down" src="static/H-Logo-Final.png" alt="Logo"></a>
-
-    <a href="index.html"><img class="brand-logo-mobile hide-on-large-only" src="static/H-Logo-Final.png" alt="Logo"></a>
-
-    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down ">
-      <li><a class="nav-text  " href="index.html">Home</a></li>     
-      <li>
-        <div class="dropdown1 ">
-          <span class="nav-text-services" >Services
-          </span>
-          <div class="dropdown-content1">
-            <a class="dropdown-content-text" href="commercial-services.html">Commercial</a>
-            <a class="dropdown-content-text" href="residential-services.html">Residential</a>      
-          </div>
-        </div>
-      </li>
-      <li><a class="nav-text " href="portfolio.html">Portfolio</a></li>   
-      <li>
-        <div class="dropdown1 ">
-          <span class="nav-text-services active-nav2" >About
-          </span>
-          <div class="dropdown-content1">
-            <a class="dropdown-content-text" href="about.html">About Us</a>
-            <a class="dropdown-content-text"  href="vinylexplained.html">About Vinyl</a>
-          </div>      
-        </div>
-      </li>
-      <li><a class="nav-text " href="contact.html">Contact</a></li>
+   <!--Nav-->
+   <nav  class="hide-on-med-and-down">
+    <div class="container-2  nav-wrapper">
+       <a href="index.html"><img class="brand-logo  hide-on-med-and-down" src="static/how_logo_updated.png" alt="House of Wrap Logo"></a>
+       <a href="index.html"><img class="brand-logo-mobile hide-on-large-only" src="static/H-Logo-Final.png" alt="House of Wrap Logo"></a>
+       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+       <ul id="nav-mobile" class="right hide-on-med-and-down ">
+          <li><a class="nav-text  " href="index.html">Home</a></li>
+          <li>
+             <div class="dropdown1 ">
+                <span class="nav-text-services" >Services
+                </span>
+                <div class="dropdown-content1">
+                  <a class="dropdown-content-text" href="services/doors.html">Doors</a>
+                  <a class="dropdown-content-text" href="services/cabinets.html">Cabinets</a>
+                  <a class="dropdown-content-text" href="services/countertops.html">Desk & Countertops</a>
+                  <a class="dropdown-content-text" href="services/millwork.html">Millwork</a>
+                  <a class="dropdown-content-text" href="services/walls-and-panels.html">Walls & Panels</a>
+                  <a class="dropdown-content-text" href="services/elevators.html">Elevators</a>
+                  <a class="dropdown-content-text" href="services/exterior.html">Exterior</a>    
+                </div>
+             </div>
+          </li>
+          <li><a class="nav-text active-nav2" href="portfolio.html">Portfolio</a></li>
+          <li>
+             <div class="dropdown1 ">
+                <span class="nav-text-services" >About
+                </span>
+                <div class="dropdown-content1">
+                   <a class="dropdown-content-text" href="about.html">About Us</a>
+                   <a class="dropdown-content-text"  href="vinylexplained.html">About Vinyl</a>
+                </div>
+             </div>
+          </li>
+          <li><a class="nav-text " href="contact.html">Contact</a></li>
+       </ul>
+    </div>
+ </nav>
+ <!--Mobile Nav-->
+ <div class="how-flag-banner hide-on-large-only ">
+    <div class="flag-text-container2  ">
+       <img class="canadian-maple-leaf" src="images/new_images/misc/canada-national-fabric-flag-symbol-international-world-north-america-country_113767-1642.avif" alt="Canadian Flag">
+       <span class="brand-name2  ">House of Wrap</span>
+    </div>
+ </div>
+ <nav class="hide-on-large-only mobile-nav-bg">
+    <div>
+       <a href="index.html"><img class="brand-logo-mobile hide-on-large-only" src="static/how_logo_circle.png" alt="House of Wrap Logo"></a>
+       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+       <li>
+          <a href="index.html"><img class="brand-logo-m  " src="static/how_logo_updated.png" alt="House of Wrap Logo"></a></br>
+       </li>
+       <li><a class="nav-text2" href="index.html">Home</a></li>
+       <li><a class="nav-text2" href="portfolio.html">Portfolio</a></li>
+       <!-- SERVICES DROPDOWN -->
+       <li>
+          <a class="nav-text2 dropdown-toggle" href="#!" data-group="service-link" style="display: inline-flex; align-items: center;">
+          Services
+          <i class="material-icons" style="margin-left: 6px;">expand_more</i>
+          </a>
+       </li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/doors.html">Doors</a></li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/cabinets.html">Cabinets</a></li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/countertops.html">Desk & Countertops</a></li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/millwork.html">Millwork</a></li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/walls-and-panels.html">Walls & Panels</a></li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/elevators.html">Elevators</a></li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/exterior.html">Exterior</a></li>
+       <!-- ABOUT DROPDOWN -->
+       <li>
+          <a class="nav-text2 dropdown-toggle" href="#!" data-group="about-link" style="display: inline-flex; align-items: center;">
+          About
+          <i class="material-icons" style="margin-left: 6px;">expand_more</i>
+          </a>
+       </li>
+       <li class="about-link hidden"><a class="nav-text3 indent" href="vinylexplained.html">About Vinyl</a></li>
+       <li class="about-link hidden"><a class="nav-text3 indent" href="about.html">About Us</a></li>
+       <li><a class="nav-text2" href="contact.html">Contact</a></li>
     </ul>
-  </div>
-
-</nav>
-<!--Mobile Nav-->
-<ul class="sidenav" id="mobile-demo">
-      <li><a class="nav-text2 " href="index.html">Home</a></li>
-      <li><a class="nav-text2" href="portfolio.html">Portfolio</a></li>
-     <li><a class="nav-text2 non-hover" >Services</a></li>
-        <li><a class="nav-text2 indent" href="residential-services.html">Residential</a></li>
-        <li><a class="nav-text2 indent" href="commercial-services.html">Commercial</a></li>
-     <li><a class="nav-text2 non-hover" >About</a></li>
-        <li><a class="nav-text2 indent" href="vinylexplained.html">Vinyl</a></li>
-        <li><a class="nav-text2 indent" href="about.html">Us</a></li>
-      <li><a class="nav-text2" href="contact.html">Contact</a></li>
-  </ul>
-<!--Mobile Nav-->
+ </nav>
+  <!--Nav-->
 
   <body id="top" style="margin-bottom: 0px !important;">
   <div style="margin-top: 10vw; padding-bottom:100px;"class="container">
@@ -199,7 +233,7 @@ hr.line-blue{
           <a target="_blank" href="mailto:contact@houseofwrap.com"><p class="p-footer-sub">contact@HouseofWrap.com</p></a>
           <!--<a target="_blank"  href="https://www.facebook.com/houseofwrapcanada/"><p class="p-margin-top p-footer-sub">Facebook</p></a>-->
           <a target="_blank"  href="https://www.instagram.com/houseofwrapcanada/"><p class="p-margin-top p-footer-sub">Instagram</p></a>
-          <a target="_blank"  href="tel:647-951-9484"><p class="p-margin-top p-footer-sub">(905) 407-9484</p></a>
+          <a target="_blank"  href="tel:905-407-9484"><p class="p-margin-top p-footer-sub">(905) 407-9484</p></a>
         </div>
       </div>
 
@@ -253,4 +287,34 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdownTriggers = document.querySelectorAll(".dropdown-toggle");
+  
+      dropdownTriggers.forEach(trigger => {
+        trigger.addEventListener("click", function (e) {
+          e.preventDefault();
+          const group = this.getAttribute("data-group");
+  
+          // Close all dropdown groups first
+          const allGroups = new Set(
+            Array.from(dropdownTriggers).map(t => t.getAttribute("data-group"))
+          );
+  
+          allGroups.forEach(g => {
+            if (g !== group) {
+              document.querySelectorAll(`.${g}`).forEach(item => item.classList.add("hidden"));
+            }
+          });
+  
+          // Toggle current dropdown group
+          document.querySelectorAll(`.${group}`).forEach(item => item.classList.toggle("hidden"));
+        });
+      });
+  
+      // Initialize sidenav (Materialize)
+      const elems = document.querySelectorAll(".sidenav");
+      M.Sidenav.init(elems);
+    });
+  </script>
 </html>
