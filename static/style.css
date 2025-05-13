@@ -4924,23 +4924,15 @@ body.no-scroll {
   align-items: center;
   gap: 12px; /* Adjusted for better spacing */
   font-family: "Arial", sans-serif;
-  padding: 8px 10px;
+  padding: 0px 10px;
   border-radius: 8px; /* Rounded corners */
   width: fit-content; /* Adjusts to content */
   position: relative; /* Needed for the underline */
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 /* Underline effect covering both flag & text */
-.flag-text-container::after {
-  content: "";
-  position: absolute;
-  left: 4;
-  bottom: -10px;
-  width: 90%;
-  height: 2px;
-  background-color: #282828;
-}
+
 
 .canadian-maple-leaf {
   width: 24px; /* Slightly larger */
