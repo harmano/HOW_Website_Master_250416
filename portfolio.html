@@ -34,13 +34,13 @@
                 <span class="nav-text-services" >Services
                 </span>
                 <div class="dropdown-content1">
-                  <a class="dropdown-content-text" href="services/doors.html">Doors</a>
-                  <a class="dropdown-content-text" href="services/cabinets.html">Cabinets</a>
-                  <a class="dropdown-content-text" href="services/countertops.html">Desk & Countertops</a>
-                  <a class="dropdown-content-text" href="services/millwork.html">Millwork</a>
-                  <a class="dropdown-content-text" href="services/walls-and-panels.html">Walls & Panels</a>
-                  <a class="dropdown-content-text" href="services/elevators.html">Elevators</a>
-                  <a class="dropdown-content-text" href="services/exterior.html">Exterior</a>    
+                  <a class="dropdown-content-text" href="services/door-resurfacing.html">Doors</a>
+                  <a class="dropdown-content-text" href="services/cabinet-resurfacing.html">Cabinets</a>
+                  <a class="dropdown-content-text" href="services/countertop-resurfacing.html">Desk & Countertops</a>
+                  <a class="dropdown-content-text" href="services/millwork-resurfacing.html">Millwork</a>
+                  <a class="dropdown-content-text" href="services/walls-and-panels-resurfacing.html">Walls & Panels</a>
+                  <a class="dropdown-content-text" href="services/elevator-resurfacing.html">Elevators</a>
+                  <a class="dropdown-content-text" href="services/exterior-resurfacing.html">Exterior</a>    
                 </div>
              </div>
           </li>
@@ -84,13 +84,13 @@
           <i class="material-icons" style="margin-left: 6px;">expand_more</i>
           </a>
        </li>
-       <li class="service-link hidden"><a class="nav-text3 indent" href="services/doors.html">Doors</a></li>
-       <li class="service-link hidden"><a class="nav-text3 indent" href="services/cabinets.html">Cabinets</a></li>
-       <li class="service-link hidden"><a class="nav-text3 indent" href="services/countertops.html">Desk & Countertops</a></li>
-       <li class="service-link hidden"><a class="nav-text3 indent" href="services/millwork.html">Millwork</a></li>
-       <li class="service-link hidden"><a class="nav-text3 indent" href="services/walls-and-panels.html">Walls & Panels</a></li>
-       <li class="service-link hidden"><a class="nav-text3 indent" href="services/elevators.html">Elevators</a></li>
-       <li class="service-link hidden"><a class="nav-text3 indent" href="services/exterior.html">Exterior</a></li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/door-resurfacing.html">Doors</a></li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/cabinet-resurfacing.html">Cabinets</a></li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/countertop-resurfacing.html">Desk & Countertops</a></li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/millwork-resurfacing.html">Millwork</a></li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/walls-and-panels-resurfacing.html">Walls & Panels</a></li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/elevator-resurfacing.html">Elevators</a></li>
+       <li class="service-link hidden"><a class="nav-text3 indent" href="services/exterior-resurfacing.html">Exterior</a></li>
        <!-- ABOUT DROPDOWN -->
        <li>
           <a class="nav-text2 dropdown-toggle" href="#!" data-group="about-link" style="display: inline-flex; align-items: center;">
@@ -1778,13 +1778,13 @@
       </div>
       <div class="footer-sections ooter-sections-2 col m2 s6">
          <p class="h1-footer-sub">Services</p>
-         <a href="services/doors.html">
+         <a href="services/door-resurfacing.html">
             <p class="p-footer-sub">Door & Surrounds</p>
          </a>
          <a href="services/wallsandpanels.html">
             <p class="p-margin-top p-footer-sub">Wall & Panels</p>
          </a>
-         <a href="services/millwork.html">
+         <a href="services/millwork-resurfacing.html">
             <p class="p-margin-top p-footer-sub">Millwork</p>
          </a>
          <a href="services/other.html">
@@ -2325,5 +2325,34 @@ document.addEventListener("click", function (event) {
       const elems = document.querySelectorAll(".sidenav");
       M.Sidenav.init(elems);
     });
-  </script>
+  </script>     <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const dropdownTriggers = document.querySelectorAll(".dropdown-toggle");
+        
+            dropdownTriggers.forEach(trigger => {
+              trigger.addEventListener("click", function (e) {
+                e.preventDefault();
+                const group = this.getAttribute("data-group");
+        
+                // Close all dropdown groups first
+                const allGroups = new Set(
+                  Array.from(dropdownTriggers).map(t => t.getAttribute("data-group"))
+                );
+        
+                allGroups.forEach(g => {
+                  if (g !== group) {
+                    document.querySelectorAll(`.${g}`).forEach(item => item.classList.add("hidden"));
+                  }
+                });
+        
+                // Toggle current dropdown group
+                document.querySelectorAll(`.${group}`).forEach(item => item.classList.toggle("hidden"));
+              });
+            });
+        
+            // Initialize sidenav (Materialize)
+            const elems = document.querySelectorAll(".sidenav");
+            M.Sidenav.init(elems);
+          });
+        </script>
 </html>

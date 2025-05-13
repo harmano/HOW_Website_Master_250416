@@ -90,7 +90,7 @@
                   </div>
                </div>
             </li>
-            <li><a class="nav-text " href="portfolio.html">Portfolio</a></li>
+            <li><a class="nav-text " href="../portfolio.html">Portfolio</a></li>
             <li>
                <div class="dropdown1 ">
                   <span class="nav-text-services" >About
@@ -201,7 +201,7 @@
                      </div>
                   </div>
                   <div class="row">
-                     <a href="contact.html" class="newbtn buttons-main">Contact us</a> 
+                     <a href="../contact.html" class="newbtn buttons-main">Contact us</a> 
                      <a href="#projects" class="newbtn2 buttons-main">View Projects</a>
                   </div>
                   <div class="row">
@@ -3196,5 +3196,15 @@
         });
       </script>
 
-
+<script>
+  // Close any dropdowns when clicking outside
+document.addEventListener("click", function (event) {
+  if (!event.target.closest(".input-field2")) {
+    const dropdown1 = document.getElementById("dropdownOptions");
+    const dropdown2 = document.getElementById("dropdownOptions2");
+    if (dropdown1) dropdown1.style.display = "none";
+    if (dropdown2) dropdown2.style.display = "none";
+  }
+});
+</script>
 </html>
