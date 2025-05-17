@@ -6070,3 +6070,16 @@ html, body {
   margin-right: 20px;
   color: #333;
 }
+
+.houseofwrap-review-link {
+  font-size: 12px;
+  color: #666; /* grey */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+  padding-top: 30px !important;
+}
+
+.houseofwrap-review-link:hover {
+  color: #333; /* slightly darker grey on hover */
+  text-decoration: none;
+}
