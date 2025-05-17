@@ -3892,12 +3892,13 @@ ul.custom-tabs li.custom-tab-active::before {
   border-radius: 0px; /* Optional: Rounded corners */
   margin-bottom: 0px;
 }
-.clientsimg{
- width: 90%;
- height: auto;
-  object-fit: cover; 
-  opacity: .6;
-  
+.clientsimg {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0.6;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
 .custom-p {
