@@ -3732,6 +3732,7 @@ ul.custom-tabs li.custom-tab-active::before {
     top: 0px;
     top: 0%;
     left: 0%;
+    height: 100%;
   }
 
   .header-image-2 {
@@ -3739,6 +3740,7 @@ ul.custom-tabs li.custom-tab-active::before {
     max-width: 280px;
     left: 20%;
     top: 40%;
+    height: 100%;
   }
 
 }
@@ -3749,12 +3751,14 @@ ul.custom-tabs li.custom-tab-active::before {
     width: 18vw;
     max-width: 400px;
     top:-50px;
+    height: 100%;
   }
 
   .header-image-2 {
     width: 20vw;
     max-width: 350px;
     left: 30%;
+    height: 100%;
   }
 }
 
