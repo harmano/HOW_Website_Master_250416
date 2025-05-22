@@ -157,7 +157,7 @@
                   <!------------------ Form -------------->
              <!-- Fixed Formspree-Compatible Form -->
 <form action="https://formspree.io/f/mkggpawn" method="POST" enctype="multipart/form-data" onsubmit="return validateForm(event)">
-  
+  <input type="hidden" name="_redirect" value="https://www.houseofwrap.com/contact_success.html">
   <div class="row">
     <div class="input-field2 col s5">
       <input placeholder="Name" type="text" name="name" required>
@@ -202,14 +202,13 @@ required
     <div class="col s1"></div>
     <div class="input-field2 col s5" style="position: relative;">
       <input 
-        type="tel"
-        inputmode="numeric"
-        pattern="[0-9]*"
-        placeholder="Budget" 
-        name="Budget" 
-        id="budgetInput" 
-        required 
-        style="padding-left: 40px;"> <!-- make space for $ -->
+  type="text"
+  inputmode="numeric"
+  placeholder="Budget" 
+  name="Budget" 
+  id="budgetInput" 
+  required 
+  style="padding-left: 40px;"><!-- make space for $ -->
     
       <span 
         id="dollarSign" 
